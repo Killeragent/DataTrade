@@ -10,7 +10,7 @@ def login():
 	'''
 	client_id="H8O8SRR6U6-100"
 	secret_key="WA58YUMWLM"
-	session=accessToken.SessionModel(client_id=client_id, secret_key=secret_key,redirect_uri="https://trade.fyers.in",grant_type="authorization_code",response_type="code")
+	session=accessToken.SessionModel(client_id=client_id, secret_key=secret_key,redirect_uri="https://trade.fyers.in/api-login/redirect-uri/index.html",grant_type="authorization_code",response_type="code")
 	print(" Open the Login screen in the browser...")
 	print(session.generate_authcode() )
 	value=input("Please enter your auth code:")
@@ -18,6 +18,7 @@ def login():
 	auth_code=value
 	session.set_token(auth_code)
 	response = session.generate_token()
+	print(response)
 	access_token=response["access_token"]
 	file=open('../Input/token.txt','w')
 	file.write(str(access_token))

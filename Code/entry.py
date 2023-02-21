@@ -82,6 +82,8 @@ def position_taken(symbol,strategy,entry_type,fyers):
 		unrelProfit =trades['unrealized_profit']
 		relProfit = trades['realized_profit']
 		side = trades['side']
+		bq = trades['buyQty']
+		sq = trades['sellQty']
 
 		if side==1:
 			side = 'BUY'
@@ -89,9 +91,9 @@ def position_taken(symbol,strategy,entry_type,fyers):
 			side = 'SELL'
 
 		scrip=symbol
-		print(scrip,stock,side,entry_type,relProfit)
+		print(scrip,stock,side,entry_type,bq,sq)
 
-		if (unrelProfit>0.0 or unrelProfit<0.0) and scrip== stock and side == entry_type:
+		if (abs(bq-sq)!=0) and scrip== stock and side == entry_type:
 			flag = True
 			break
 	return flag
@@ -159,7 +161,7 @@ def check_entry(symbol,ltp,prev_ltp,fyers):
 						write_30min_log("INFO:\tparamaters are trade_type:{} sl:{} qt1:{} qt2:{} Tp1:{} Tp2:{}".format(trade_type,sl,qt1,qt2,tp1,tp2))
 						try:
 							response=place_bracket_30min_order_MARKET(symbol,trade_type,sl,tp1,qt1,fyers)
-							if response in None:
+							if response is None:
 								print(" order placement error")
 								write_30min_log("ERROR:\tOrder Placement error")
 							else:
@@ -439,6 +441,42 @@ def check_30min_type2(symbol,ltp,prev_ltp,fyers):
 
 
 
+#################################
+# Modify and Exit
+################################
+def modify_and_exit(quote_ltp_list,fyers):
+	'''
+	Modify and exit open positions
+	Input: transaction.csv- a file that contains SL and TP of taken positions
+	'''
+	# fetch the ltp of all the items
+
+
+
+	# Fetch all open positions
+	pos=fyers.positions()
+	netPos=pos['netPositions']
+
+	#Fetch the transaction.csv file
+	df=pd.read_csv('../Input/transaction_FYERS.csv')
+
+	# For each open position
+	for trades in netPos:
+		stock = trades['symbol']
+		unrelProfit =trades['unrealized_profit']
+		relProfit = trades['realized_profit']
+		side = trades['side']
+		bq = trades['buyQty']
+		sq = trades['sellQty']
+		ba = trades['buyAvg']
+		sa = trades['sellAvg']
+		entry_price = 0
+		if side==1:
+			side = 'BUY'
+			entry_price = int(ba)
+		if side==-1:
+			side = 'SELL'
+			entry_price = int(sa)
 
 
 
@@ -473,4 +511,16 @@ def check_30min_type2(symbol,ltp,prev_ltp,fyers):
 
 
 
-d
+
+
+
+
+
+
+
+
+
+
+
+
+

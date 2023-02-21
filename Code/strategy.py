@@ -237,7 +237,7 @@ def fetch_triggers_first_red_short(filename):
 
 
 def determine_sl_tp_first_red_short(trade_type,high,low):
-	MAX_LOSS_PER_TRADE = 200
+	MAX_LOSS_PER_TRADE = 300
 	buffer=0
 	high=high+buffer
 	low=low-buffer
@@ -304,7 +304,7 @@ def fetch_triggers_first_30min_bo(filename):
 			close=df['C'].values[1]
 			diff=abs(high-low)
 			#If too big->Ignore the second candle and fetch the third candle if present
-			if ((close*0.7)/100)<diff: 
+			if ((close*0.9)/100)<diff: 
 				if len(df)>2:
 					high=df['H'].values[2]
 					low=df['L'].values[2]
@@ -321,7 +321,7 @@ def fetch_triggers_first_30min_bo(filename):
 	return high,low
 
 def determine_sl_tp_first_30min_bo_type1(trade_type,high,low):
-	MAX_LOSS_PER_TRADE = 200
+	MAX_LOSS_PER_TRADE = 250
 	buffer=0
 	high=high+buffer
 	low=low-buffer
@@ -346,6 +346,7 @@ def determine_sl_tp_first_30min_bo_type1(trade_type,high,low):
 		tp1=2.2*diff
 		tp2=3*diff
 
+	sl=round(diff,1)
 	tp1 = round(tp1,1)
 	tp2=round(tp2,1)
 
@@ -353,7 +354,7 @@ def determine_sl_tp_first_30min_bo_type1(trade_type,high,low):
 
 
 def determine_sl_tp_first_30min_bo_type2(trade_type,high,low):
-	MAX_LOSS_PER_TRADE = 200
+	MAX_LOSS_PER_TRADE = 250
 	buffer=0
 	high=high+buffer
 	low=low-buffer
@@ -374,6 +375,7 @@ def determine_sl_tp_first_30min_bo_type2(trade_type,high,low):
 		sl=diff
 		tp1=(5*diff)
 
+	sl = round(diff,1)
 	tp1 = round(tp1,1)
 
 	return int(quantity),sl,tp1
