@@ -1,0 +1,615 @@
+ERROR:root:------2023-02-20 20:50:50.154975-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:50:50.155797-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:50:51.186223-------
+ERROR:root:From the Main catch loop
+ERROR:root:'<=' not supported between instances of 'float' and 'NoneType'
+ERROR:root:------2023-02-20 20:50:51.187292-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:50:51.188084-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:50:51.188852-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:50:51.189604-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:50:51.190349-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:50:51.191080-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:50:51.191806-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:50:51.192531-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:50:58.344110-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:50:58.345125-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:51:00.407651-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:51:00.408575-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:51:00.409369-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:51:00.410001-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:51:00.410610-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:51:00.411206-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:51:00.411811-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:51:00.412402-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:51:07.553709-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:51:07.554767-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:51:09.736669-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:51:09.737623-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:51:09.738421-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:51:09.739259-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:51:09.740037-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:51:09.740782-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:51:09.741532-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:51:09.742281-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:51:17.180785-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:51:17.182866-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:51:19.438425-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:51:19.440143-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:51:19.441606-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:51:19.443076-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:51:19.444198-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:51:19.445267-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:51:19.446315-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:51:19.447273-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:51:26.604988-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:51:26.606517-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:51:28.772704-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:51:28.774133-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:51:28.775292-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:51:28.776476-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:51:28.777603-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:51:28.778523-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:51:28.779452-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:51:28.780359-------
+ERROR:root:From the Main catch loop
+ERROR:root:local variable 'red_candle_list' referenced before assignment
+ERROR:root:------2023-02-20 20:53:15.993516-------
+ERROR:root:From the Main catch loop
+ERROR:root:'<=' not supported between instances of 'float' and 'NoneType'
+ERROR:root:------2023-02-20 20:53:17.014610-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Daily/RELIANCE.csv'
+ERROR:root:------2023-02-20 20:53:18.035905-------
+ERROR:root:From the Main catch loop
+ERROR:root:'<=' not supported between instances of 'float' and 'NoneType'
+ERROR:root:------2023-02-20 20:53:19.140497-------
+ERROR:root:From the Main catch loop
+ERROR:root:'<=' not supported between instances of 'float' and 'NoneType'
+ERROR:root:------2023-02-20 20:53:20.180262-------
+ERROR:root:From the Main catch loop
+ERROR:root:'<=' not supported between instances of 'float' and 'NoneType'
+ERROR:root:------2023-02-20 20:53:21.207559-------
+ERROR:root:From the Main catch loop
+ERROR:root:'<=' not supported between instances of 'float' and 'NoneType'
+ERROR:root:------2023-02-20 20:53:37.879725-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Daily/RELIANCE.csv'
+ERROR:root:------2023-02-20 20:54:29.302647-------
+ERROR:root:From the Main catch loop
+ERROR:root:'<=' not supported between instances of 'float' and 'NoneType'
+ERROR:root:------2023-02-20 20:54:30.332383-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Daily/RELIANCE.csv'
+ERROR:root:------2023-02-20 20:54:31.338263-------
+ERROR:root:From the Main catch loop
+ERROR:root:'<=' not supported between instances of 'float' and 'NoneType'
+ERROR:root:------2023-02-20 20:54:32.558504-------
+ERROR:root:From the Main catch loop
+ERROR:root:'<=' not supported between instances of 'float' and 'NoneType'
+ERROR:root:------2023-02-20 20:54:33.517267-------
+ERROR:root:From the Main catch loop
+ERROR:root:'<=' not supported between instances of 'float' and 'NoneType'
+ERROR:root:------2023-02-20 20:54:34.527080-------
+ERROR:root:From the Main catch loop
+ERROR:root:'<=' not supported between instances of 'float' and 'NoneType'
+ERROR:root:------2023-02-20 20:54:51.638125-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Daily/RELIANCE.csv'
+ERROR:root:------2023-02-20 20:55:13.025511-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Daily/RELIANCE.csv'
+ERROR:root:------2023-02-20 20:55:33.616437-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Daily/RELIANCE.csv'
+ERROR:root:------2023-02-20 20:55:54.399087-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Daily/RELIANCE.csv'
+ERROR:root:------2023-02-20 20:56:15.474870-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Daily/RELIANCE.csv'
+ERROR:root:------2023-02-20 20:56:36.318617-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Daily/RELIANCE.csv'
+ERROR:root:------2023-02-20 20:56:57.343955-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Daily/RELIANCE.csv'
+ERROR:root:------2023-02-20 20:57:18.054156-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Daily/RELIANCE.csv'
+ERROR:root:------2023-02-20 20:57:38.947807-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Daily/RELIANCE.csv'
+ERROR:root:------2023-02-20 20:58:00.124548-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Daily/RELIANCE.csv'
+ERROR:root:------2023-02-20 20:58:20.815294-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Daily/RELIANCE.csv'
+ERROR:root:------2023-02-21 15:51:22.154630-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/NIFTYBANK.csv'
+ERROR:root:------2023-02-21 15:51:23.122192-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/SBIN.csv'
+ERROR:root:------2023-02-21 15:51:23.127048-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/INDUSINDBK.csv'
+ERROR:root:------2023-02-21 15:51:23.131295-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/UPL.csv'
+ERROR:root:------2023-02-21 15:51:23.135373-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/HDFC.csv'
+ERROR:root:------2023-02-21 15:51:23.138954-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/HDFC.csv'
+ERROR:root:------2023-02-21 15:51:36.067271-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/NIFTYBANK.csv'
+ERROR:root:------2023-02-21 15:51:37.235235-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/SBIN.csv'
+ERROR:root:------2023-02-21 15:51:37.239660-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/INDUSINDBK.csv'
+ERROR:root:------2023-02-21 15:51:37.243910-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/UPL.csv'
+ERROR:root:------2023-02-21 15:51:37.247938-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/HDFC.csv'
+ERROR:root:------2023-02-21 15:51:37.251582-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/HDFC.csv'
+ERROR:root:------2023-02-21 15:51:50.450721-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/NIFTYBANK.csv'
+ERROR:root:------2023-02-21 15:51:51.521643-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/SBIN.csv'
+ERROR:root:------2023-02-21 15:51:51.526037-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/INDUSINDBK.csv'
+ERROR:root:------2023-02-21 15:51:51.530253-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/UPL.csv'
+ERROR:root:------2023-02-21 15:51:51.534153-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/HDFC.csv'
+ERROR:root:------2023-02-21 15:51:51.537755-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/HDFC.csv'
+ERROR:root:------2023-02-21 15:52:05.003651-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/NIFTYBANK.csv'
+ERROR:root:------2023-02-21 15:52:06.038165-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/SBIN.csv'
+ERROR:root:------2023-02-21 15:52:06.042716-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/INDUSINDBK.csv'
+ERROR:root:------2023-02-21 15:52:06.046935-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/UPL.csv'
+ERROR:root:------2023-02-21 15:52:06.051110-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/HDFC.csv'
+ERROR:root:------2023-02-21 15:52:06.054721-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/HDFC.csv'
+ERROR:root:------2023-02-21 15:52:18.964942-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/NIFTYBANK.csv'
+ERROR:root:------2023-02-21 15:52:19.973279-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/SBIN.csv'
+ERROR:root:------2023-02-21 15:52:19.979377-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/INDUSINDBK.csv'
+ERROR:root:------2023-02-21 15:52:19.984205-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/UPL.csv'
+ERROR:root:------2023-02-21 15:52:19.988474-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/HDFC.csv'
+ERROR:root:------2023-02-21 15:52:19.992597-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/HDFC.csv'
+ERROR:root:------2023-02-21 15:52:33.044822-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/NIFTYBANK.csv'
+ERROR:root:------2023-02-21 15:52:34.075796-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/SBIN.csv'
+ERROR:root:------2023-02-21 15:52:34.083857-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/INDUSINDBK.csv'
+ERROR:root:------2023-02-21 15:52:34.089248-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/UPL.csv'
+ERROR:root:------2023-02-21 15:52:34.093836-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/HDFC.csv'
+ERROR:root:------2023-02-21 15:52:34.098055-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/HDFC.csv'
+ERROR:root:------2023-02-21 15:52:47.164125-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/NIFTYBANK.csv'
+ERROR:root:------2023-02-21 15:52:48.149398-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/SBIN.csv'
+ERROR:root:------2023-02-21 15:52:48.155591-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/INDUSINDBK.csv'
+ERROR:root:------2023-02-21 15:52:48.159702-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/UPL.csv'
+ERROR:root:------2023-02-21 15:52:48.165390-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/HDFC.csv'
+ERROR:root:------2023-02-21 15:52:48.173233-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/HDFC.csv'
+ERROR:root:------2023-02-21 15:53:00.886837-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/NIFTYBANK.csv'
+ERROR:root:------2023-02-21 15:53:01.866429-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/SBIN.csv'
+ERROR:root:------2023-02-21 15:53:01.873117-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/INDUSINDBK.csv'
+ERROR:root:------2023-02-21 15:53:01.877179-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/UPL.csv'
+ERROR:root:------2023-02-21 15:53:01.882573-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/HDFC.csv'
+ERROR:root:------2023-02-21 15:53:01.888667-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/HDFC.csv'
+ERROR:root:------2023-02-21 15:53:14.628980-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/NIFTYBANK.csv'
+ERROR:root:------2023-02-21 15:53:15.606060-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/SBIN.csv'
+ERROR:root:------2023-02-21 15:53:15.609930-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/INDUSINDBK.csv'
+ERROR:root:------2023-02-21 15:53:21.558767-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/UPL.csv'
+ERROR:root:------2023-02-21 15:53:21.566613-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/HDFC.csv'
+ERROR:root:------2023-02-21 15:53:21.572058-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/HDFC.csv'
+ERROR:root:------2023-02-21 15:53:34.514412-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/NIFTYBANK.csv'
+ERROR:root:------2023-02-21 15:53:35.527121-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/SBIN.csv'
+ERROR:root:------2023-02-21 15:53:41.511425-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/INDUSINDBK.csv'
+ERROR:root:------2023-02-21 15:53:47.472072-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/UPL.csv'
+ERROR:root:------2023-02-21 15:53:47.478020-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/HDFC.csv'
+ERROR:root:------2023-02-21 15:53:47.482039-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/HDFC.csv'
+ERROR:root:------2023-02-21 15:54:00.400017-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/NIFTYBANK.csv'
+ERROR:root:------2023-02-21 15:54:01.429272-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/SBIN.csv'
+ERROR:root:------2023-02-21 15:54:07.460713-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/INDUSINDBK.csv'
+ERROR:root:------2023-02-21 15:54:13.472563-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/UPL.csv'
+ERROR:root:------2023-02-21 15:54:13.482809-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/HDFC.csv'
+ERROR:root:------2023-02-21 15:54:13.487572-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/HDFC.csv'
+ERROR:root:------2023-02-21 15:54:26.390439-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/NIFTYBANK.csv'
+ERROR:root:------2023-02-21 15:54:27.364854-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/SBIN.csv'
+ERROR:root:------2023-02-21 15:54:33.400696-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/INDUSINDBK.csv'
+ERROR:root:------2023-02-21 15:54:39.383559-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/UPL.csv'
+ERROR:root:------2023-02-21 15:54:39.390714-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/HDFC.csv'
+ERROR:root:------2023-02-21 15:54:39.395304-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/HDFC.csv'
+ERROR:root:------2023-02-21 15:54:52.689228-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/NIFTYBANK.csv'
+ERROR:root:------2023-02-21 15:54:53.759375-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/SBIN.csv'
+ERROR:root:------2023-02-21 15:54:59.907259-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/INDUSINDBK.csv'
+ERROR:root:------2023-02-21 15:55:05.859020-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/UPL.csv'
+ERROR:root:------2023-02-21 15:55:05.867142-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/HDFC.csv'
+ERROR:root:------2023-02-21 15:55:05.871236-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/HDFC.csv'
+ERROR:root:------2023-02-21 15:55:18.815278-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/NIFTYBANK.csv'
+ERROR:root:------2023-02-21 15:55:19.833124-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/SBIN.csv'
+ERROR:root:------2023-02-21 15:55:25.837417-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/INDUSINDBK.csv'
+ERROR:root:------2023-02-21 15:55:31.908441-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/UPL.csv'
+ERROR:root:------2023-02-21 15:55:31.917165-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/HDFC.csv'
+ERROR:root:------2023-02-21 15:55:31.921099-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/HDFC.csv'
+ERROR:root:------2023-02-21 15:55:44.942105-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/NIFTYBANK.csv'
+ERROR:root:------2023-02-21 15:55:45.939236-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/SBIN.csv'
+ERROR:root:------2023-02-21 15:55:51.891358-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/INDUSINDBK.csv'
+ERROR:root:------2023-02-21 15:55:57.850911-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/UPL.csv'
+ERROR:root:------2023-02-21 15:55:57.857782-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/HDFC.csv'
+ERROR:root:------2023-02-21 15:55:57.863809-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/HDFC.csv'
+ERROR:root:------2023-02-21 15:56:10.735776-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/NIFTYBANK.csv'
+ERROR:root:------2023-02-21 15:56:11.780480-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/SBIN.csv'
+ERROR:root:------2023-02-21 15:56:17.730913-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/INDUSINDBK.csv'
+ERROR:root:------2023-02-21 15:56:23.691418-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/UPL.csv'
+ERROR:root:------2023-02-21 15:56:23.698993-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/HDFC.csv'
+ERROR:root:------2023-02-21 15:56:23.704404-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/5min/HDFC.csv'
+ERROR:root:------2023-02-21 16:45:06.588681-------
+ERROR:root:From the Main catch loop
+ERROR:root:'<=' not supported between instances of 'float' and 'NoneType'
+ERROR:root:------2023-02-21 16:45:08.611637-------
+ERROR:root:From the Main catch loop
+ERROR:root:'<=' not supported between instances of 'float' and 'NoneType'
+ERROR:root:------2023-02-21 16:45:09.649204-------
+ERROR:root:From the Main catch loop
+ERROR:root:'<=' not supported between instances of 'float' and 'NoneType'
+ERROR:root:------2023-02-21 16:45:10.718937-------
+ERROR:root:From the Main catch loop
+ERROR:root:'<=' not supported between instances of 'float' and 'NoneType'
+ERROR:root:------2023-02-21 16:45:11.760979-------
+ERROR:root:From the Main catch loop
+ERROR:root:'<=' not supported between instances of 'float' and 'NoneType'
+ERROR:root:------2023-02-21 17:46:56.276127-------
+ERROR:root:From the Main catch loop
+ERROR:root:'<=' not supported between instances of 'float' and 'NoneType'
+ERROR:root:------2023-02-21 17:46:58.336252-------
+ERROR:root:From the Main catch loop
+ERROR:root:'<=' not supported between instances of 'float' and 'NoneType'
+ERROR:root:------2023-02-21 17:46:59.331299-------
+ERROR:root:From the Main catch loop
+ERROR:root:'<=' not supported between instances of 'float' and 'NoneType'
+ERROR:root:------2023-02-21 17:47:00.361793-------
+ERROR:root:From the Main catch loop
+ERROR:root:'<=' not supported between instances of 'float' and 'NoneType'
+ERROR:root:------2023-02-21 17:47:01.392595-------
+ERROR:root:From the Main catch loop
+ERROR:root:'<=' not supported between instances of 'float' and 'NoneType'
+ERROR:root:------2023-02-21 17:49:55.359680-------
+ERROR:root:From the Main catch loop
+ERROR:root:'<=' not supported between instances of 'float' and 'NoneType'
+ERROR:root:------2023-02-21 17:49:57.432264-------
+ERROR:root:From the Main catch loop
+ERROR:root:'<=' not supported between instances of 'float' and 'NoneType'
+ERROR:root:------2023-02-21 17:49:58.432128-------
+ERROR:root:From the Main catch loop
+ERROR:root:'<=' not supported between instances of 'float' and 'NoneType'
+ERROR:root:------2023-02-21 17:49:59.431929-------
+ERROR:root:From the Main catch loop
+ERROR:root:'<=' not supported between instances of 'float' and 'NoneType'
+ERROR:root:------2023-02-21 17:50:00.436179-------
+ERROR:root:From the Main catch loop
+ERROR:root:'<=' not supported between instances of 'float' and 'NoneType'
+ERROR:root:------2023-02-21 17:52:05.081212-------
+ERROR:root:From the Main catch loop
+ERROR:root:'<=' not supported between instances of 'float' and 'NoneType'
+ERROR:root:------2023-02-21 17:52:07.366982-------
+ERROR:root:From the Main catch loop
+ERROR:root:'<=' not supported between instances of 'float' and 'NoneType'
+ERROR:root:------2023-02-21 17:52:08.374274-------
+ERROR:root:From the Main catch loop
+ERROR:root:'<=' not supported between instances of 'float' and 'NoneType'
+ERROR:root:------2023-02-21 17:52:09.328858-------
+ERROR:root:From the Main catch loop
+ERROR:root:'<=' not supported between instances of 'float' and 'NoneType'
+ERROR:root:------2023-02-21 17:52:10.346370-------
+ERROR:root:From the Main catch loop
+ERROR:root:'<=' not supported between instances of 'float' and 'NoneType'
+ERROR:root:------2023-02-21 17:53:22.344226-------
+ERROR:root:From the Main catch loop
+ERROR:root:'<=' not supported between instances of 'float' and 'NoneType'
+ERROR:root:------2023-02-21 17:53:24.280740-------
+ERROR:root:From the Main catch loop
+ERROR:root:'<=' not supported between instances of 'float' and 'NoneType'
+ERROR:root:------2023-02-21 17:53:25.266513-------
+ERROR:root:From the Main catch loop
+ERROR:root:'<=' not supported between instances of 'float' and 'NoneType'
+ERROR:root:------2023-02-21 17:53:26.314657-------
+ERROR:root:From the Main catch loop
+ERROR:root:'<=' not supported between instances of 'float' and 'NoneType'
+ERROR:root:------2023-02-21 17:53:27.339832-------
+ERROR:root:From the Main catch loop
+ERROR:root:'<=' not supported between instances of 'float' and 'NoneType'
+ERROR:root:------2023-02-21 17:53:28.352216-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/30min/MARUTI.csv'
+ERROR:root:------2023-02-21 17:53:28.356668-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/30min/SUNPHARMA.csv'
+ERROR:root:------2023-02-21 17:53:28.360952-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/30min/TCS.csv'
+ERROR:root:------2023-02-21 17:53:46.302071-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/30min/MARUTI.csv'
+ERROR:root:------2023-02-21 17:53:46.306219-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/30min/SUNPHARMA.csv'
+ERROR:root:------2023-02-21 17:53:46.309854-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/30min/TCS.csv'
+ERROR:root:------2023-02-21 17:54:04.602510-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/30min/MARUTI.csv'
+ERROR:root:------2023-02-21 17:54:04.606933-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/30min/SUNPHARMA.csv'
+ERROR:root:------2023-02-21 17:54:04.611139-------
+ERROR:root:From the Main catch loop
+ERROR:root:[Errno 2] No such file or directory: '../Data/Intraday/30min/TCS.csv'

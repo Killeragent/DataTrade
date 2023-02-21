@@ -1,0 +1,492 @@
+2023-02-20 20:50:50.156051: 	
+
+
+
+2023-02-20 20:50:50.156167: 	INFO:	--------------Starting to check details for :NSE:NIFTYBANK-INDEX-----------------
+2023-02-20 20:50:50.156261: 	DEBUG:	Current LTP:40701.7 Previous LTP:None
+2023-02-20 20:50:50.156356: 	DEBUG:	The file string for NSE:NIFTYBANK-INDEX is NIFTYBANK
+2023-02-20 20:50:50.159450: 	DEBUG:	Data file for First red candle short (df_red) is fetched...
+2023-02-20 20:50:50.162370: 	DEBUG:	Input file path for NSE:NIFTYBANK-INDEX is: ../Input/NSE:NIFTYBANK-INDEX_fyers.csv
+2023-02-20 20:50:51.184390: 	INFO:	Number of open positoon is: 0
+2023-02-20 20:50:51.184570: 	INFO:	Checking FIRST RED Short entry condition
+2023-02-20 20:50:51.184719: 	INFO:	(Check Red Entry func)Started...
+2023-02-20 20:50:51.185550: 	**IMPORTANT:	(Check Red Entry)For NSE:NIFTYBANK-INDEX the first red candle High: 41244.85 and Low: 41089.55**
+2023-02-20 20:50:51.186148: 	ERROR:	** Error in the stockFY.py. Check the deepLogger.log for more details.
+2023-02-20 20:50:58.345370: 	
+
+
+
+2023-02-20 20:50:58.345482: 	INFO:	--------------Starting to check details for :NSE:NIFTYBANK-INDEX-----------------
+2023-02-20 20:50:58.345592: 	DEBUG:	Current LTP:40701.7 Previous LTP:40701.7
+2023-02-20 20:50:58.345706: 	DEBUG:	The file string for NSE:NIFTYBANK-INDEX is NIFTYBANK
+2023-02-20 20:50:58.349207: 	DEBUG:	Data file for First red candle short (df_red) is fetched...
+2023-02-20 20:50:58.351677: 	DEBUG:	Input file path for NSE:NIFTYBANK-INDEX is: ../Input/NSE:NIFTYBANK-INDEX_fyers.csv
+2023-02-20 20:50:59.382109: 	INFO:	Number of open positoon is: 0
+2023-02-20 20:50:59.382511: 	INFO:	Checking FIRST RED Short entry condition
+2023-02-20 20:50:59.382687: 	INFO:	(Check Red Entry func)Started...
+2023-02-20 20:50:59.383688: 	**IMPORTANT:	(Check Red Entry)For NSE:NIFTYBANK-INDEX the first red candle High: 41244.85 and Low: 41089.55**
+2023-02-20 20:50:59.383852: 	INFO:	First Red short condition checked for NSE:NIFTYBANK-INDEX. Results are Flag:False SL:0 TP:0 QTY:0
+2023-02-20 20:50:59.383979: 	INFO:	Checking exit conditions and sl update conditions...
+2023-02-20 20:50:59.384117: 	
+
+2023-02-20 20:50:59.384228: 	INFO:	(M&M) In Modify and Manage order function
+2023-02-20 20:50:59.384350: 	INFO:	(M&M) Reading the input file for stock:NSE:NIFTYBANK-INDEX filepath:../Input/NSE:NIFTYBANK-INDEX_fyers.csv
+2023-02-20 20:51:00.405919: 	INFO:	(M&M) Iterating through all open positions...
+2023-02-20 20:51:00.406190: 	INFO:	(M&M) In position checking... Scrip:NSE:NIFTYBEES-EQ quantity open:0 Symbol(the passed param in the func):NSE:NIFTYBANK-INDEX
+2023-02-20 20:51:00.406340: 	INFO:	(M&M) Iterating through all open positions...
+2023-02-20 20:51:00.406470: 	INFO:	(M&M) In position checking... Scrip:NSE:NIFTY2330218200CE quantity open:-50 Symbol(the passed param in the func):NSE:NIFTYBANK-INDEX
+2023-02-20 20:51:00.406666: 	INFO:	Checking done successfully
+2023-02-20 20:51:00.406820: 	INFO:	--------------End of details checking for :NSE:NIFTYBANK-INDEX-----------------
+2023-02-20 20:51:07.555010: 	
+
+
+
+2023-02-20 20:51:07.555128: 	INFO:	--------------Starting to check details for :NSE:NIFTYBANK-INDEX-----------------
+2023-02-20 20:51:07.555255: 	DEBUG:	Current LTP:40701.7 Previous LTP:40701.7
+2023-02-20 20:51:07.555448: 	DEBUG:	The file string for NSE:NIFTYBANK-INDEX is NIFTYBANK
+2023-02-20 20:51:07.558676: 	DEBUG:	Data file for First red candle short (df_red) is fetched...
+2023-02-20 20:51:07.560830: 	DEBUG:	Input file path for NSE:NIFTYBANK-INDEX is: ../Input/NSE:NIFTYBANK-INDEX_fyers.csv
+2023-02-20 20:51:08.680783: 	INFO:	Number of open positoon is: 0
+2023-02-20 20:51:08.680953: 	INFO:	Checking FIRST RED Short entry condition
+2023-02-20 20:51:08.681363: 	INFO:	(Check Red Entry func)Started...
+2023-02-20 20:51:08.682609: 	**IMPORTANT:	(Check Red Entry)For NSE:NIFTYBANK-INDEX the first red candle High: 41244.85 and Low: 41089.55**
+2023-02-20 20:51:08.682813: 	INFO:	First Red short condition checked for NSE:NIFTYBANK-INDEX. Results are Flag:False SL:0 TP:0 QTY:0
+2023-02-20 20:51:08.682970: 	INFO:	Checking exit conditions and sl update conditions...
+2023-02-20 20:51:08.683231: 	
+
+2023-02-20 20:51:08.683358: 	INFO:	(M&M) In Modify and Manage order function
+2023-02-20 20:51:08.683489: 	INFO:	(M&M) Reading the input file for stock:NSE:NIFTYBANK-INDEX filepath:../Input/NSE:NIFTYBANK-INDEX_fyers.csv
+2023-02-20 20:51:09.734901: 	INFO:	(M&M) Iterating through all open positions...
+2023-02-20 20:51:09.735130: 	INFO:	(M&M) In position checking... Scrip:NSE:NIFTYBEES-EQ quantity open:0 Symbol(the passed param in the func):NSE:NIFTYBANK-INDEX
+2023-02-20 20:51:09.735306: 	INFO:	(M&M) Iterating through all open positions...
+2023-02-20 20:51:09.735473: 	INFO:	(M&M) In position checking... Scrip:NSE:NIFTY2330218200CE quantity open:-50 Symbol(the passed param in the func):NSE:NIFTYBANK-INDEX
+2023-02-20 20:51:09.735646: 	INFO:	Checking done successfully
+2023-02-20 20:51:09.735801: 	INFO:	--------------End of details checking for :NSE:NIFTYBANK-INDEX-----------------
+2023-02-20 20:51:17.183373: 	
+
+
+
+2023-02-20 20:51:17.183599: 	INFO:	--------------Starting to check details for :NSE:NIFTYBANK-INDEX-----------------
+2023-02-20 20:51:17.183821: 	DEBUG:	Current LTP:40701.7 Previous LTP:40701.7
+2023-02-20 20:51:17.184259: 	DEBUG:	The file string for NSE:NIFTYBANK-INDEX is NIFTYBANK
+2023-02-20 20:51:17.195673: 	DEBUG:	Data file for First red candle short (df_red) is fetched...
+2023-02-20 20:51:17.199844: 	DEBUG:	Input file path for NSE:NIFTYBANK-INDEX is: ../Input/NSE:NIFTYBANK-INDEX_fyers.csv
+2023-02-20 20:51:18.305393: 	INFO:	Number of open positoon is: 0
+2023-02-20 20:51:18.305581: 	INFO:	Checking FIRST RED Short entry condition
+2023-02-20 20:51:18.305749: 	INFO:	(Check Red Entry func)Started...
+2023-02-20 20:51:18.307077: 	**IMPORTANT:	(Check Red Entry)For NSE:NIFTYBANK-INDEX the first red candle High: 41244.85 and Low: 41089.55**
+2023-02-20 20:51:18.307266: 	INFO:	First Red short condition checked for NSE:NIFTYBANK-INDEX. Results are Flag:False SL:0 TP:0 QTY:0
+2023-02-20 20:51:18.307431: 	INFO:	Checking exit conditions and sl update conditions...
+2023-02-20 20:51:18.307602: 	
+
+2023-02-20 20:51:18.307742: 	INFO:	(M&M) In Modify and Manage order function
+2023-02-20 20:51:18.307894: 	INFO:	(M&M) Reading the input file for stock:NSE:NIFTYBANK-INDEX filepath:../Input/NSE:NIFTYBANK-INDEX_fyers.csv
+2023-02-20 20:51:19.435727: 	INFO:	(M&M) Iterating through all open positions...
+2023-02-20 20:51:19.435999: 	INFO:	(M&M) In position checking... Scrip:NSE:NIFTYBEES-EQ quantity open:0 Symbol(the passed param in the func):NSE:NIFTYBANK-INDEX
+2023-02-20 20:51:19.436197: 	INFO:	(M&M) Iterating through all open positions...
+2023-02-20 20:51:19.436391: 	INFO:	(M&M) In position checking... Scrip:NSE:NIFTY2330218200CE quantity open:-50 Symbol(the passed param in the func):NSE:NIFTYBANK-INDEX
+2023-02-20 20:51:19.436644: 	INFO:	Checking done successfully
+2023-02-20 20:51:19.436896: 	INFO:	--------------End of details checking for :NSE:NIFTYBANK-INDEX-----------------
+2023-02-20 20:51:26.606884: 	
+
+
+
+2023-02-20 20:51:26.607101: 	INFO:	--------------Starting to check details for :NSE:NIFTYBANK-INDEX-----------------
+2023-02-20 20:51:26.607244: 	DEBUG:	Current LTP:40701.7 Previous LTP:40701.7
+2023-02-20 20:51:26.607402: 	DEBUG:	The file string for NSE:NIFTYBANK-INDEX is NIFTYBANK
+2023-02-20 20:51:26.612700: 	DEBUG:	Data file for First red candle short (df_red) is fetched...
+2023-02-20 20:51:26.616783: 	DEBUG:	Input file path for NSE:NIFTYBANK-INDEX is: ../Input/NSE:NIFTYBANK-INDEX_fyers.csv
+2023-02-20 20:51:27.689079: 	INFO:	Number of open positoon is: 0
+2023-02-20 20:51:27.689319: 	INFO:	Checking FIRST RED Short entry condition
+2023-02-20 20:51:27.689520: 	INFO:	(Check Red Entry func)Started...
+2023-02-20 20:51:27.691066: 	**IMPORTANT:	(Check Red Entry)For NSE:NIFTYBANK-INDEX the first red candle High: 41244.85 and Low: 41089.55**
+2023-02-20 20:51:27.691284: 	INFO:	First Red short condition checked for NSE:NIFTYBANK-INDEX. Results are Flag:False SL:0 TP:0 QTY:0
+2023-02-20 20:51:27.691485: 	INFO:	Checking exit conditions and sl update conditions...
+2023-02-20 20:51:27.691799: 	
+
+2023-02-20 20:51:27.692043: 	INFO:	(M&M) In Modify and Manage order function
+2023-02-20 20:51:27.692381: 	INFO:	(M&M) Reading the input file for stock:NSE:NIFTYBANK-INDEX filepath:../Input/NSE:NIFTYBANK-INDEX_fyers.csv
+2023-02-20 20:51:28.770272: 	INFO:	(M&M) Iterating through all open positions...
+2023-02-20 20:51:28.770557: 	INFO:	(M&M) In position checking... Scrip:NSE:NIFTYBEES-EQ quantity open:0 Symbol(the passed param in the func):NSE:NIFTYBANK-INDEX
+2023-02-20 20:51:28.770770: 	INFO:	(M&M) Iterating through all open positions...
+2023-02-20 20:51:28.770991: 	INFO:	(M&M) In position checking... Scrip:NSE:NIFTY2330218200CE quantity open:-50 Symbol(the passed param in the func):NSE:NIFTYBANK-INDEX
+2023-02-20 20:51:28.771286: 	INFO:	Checking done successfully
+2023-02-20 20:51:28.771542: 	INFO:	--------------End of details checking for :NSE:NIFTYBANK-INDEX-----------------
+2023-02-20 20:53:14.943857: 	
+
+
+
+2023-02-20 20:53:14.944008: 	INFO:	--------------Starting to check details for :NSE:NIFTYBANK-INDEX-----------------
+2023-02-20 20:53:14.944167: 	DEBUG:	Current LTP:40701.7 Previous LTP:None
+2023-02-20 20:53:14.944324: 	DEBUG:	The file string for NSE:NIFTYBANK-INDEX is NIFTYBANK
+2023-02-20 20:53:14.947622: 	DEBUG:	Data file for First red candle short (df_red) is fetched...
+2023-02-20 20:53:14.949736: 	DEBUG:	Input file path for NSE:NIFTYBANK-INDEX is: ../Input/NSE:NIFTYBANK-INDEX_fyers.csv
+2023-02-20 20:53:15.991939: 	INFO:	Number of open positoon is: 0
+2023-02-20 20:53:15.992129: 	INFO:	Checking FIRST RED Short entry condition
+2023-02-20 20:53:15.992292: 	INFO:	(Check Red Entry func)Started...
+2023-02-20 20:53:15.993171: 	**IMPORTANT:	(Check Red Entry)For NSE:NIFTYBANK-INDEX the first red candle High: 41244.85 and Low: 41089.55**
+2023-02-20 20:53:15.993425: 	ERROR:	** Error in the stockFY.py. Check the deepLogger.log for more details.
+2023-02-20 20:53:34.625585: 	
+
+
+
+2023-02-20 20:53:34.625757: 	INFO:	--------------Starting to check details for :NSE:NIFTYBANK-INDEX-----------------
+2023-02-20 20:53:34.625911: 	DEBUG:	Current LTP:40701.7 Previous LTP:40701.7
+2023-02-20 20:53:34.626059: 	DEBUG:	The file string for NSE:NIFTYBANK-INDEX is NIFTYBANK
+2023-02-20 20:53:34.629398: 	DEBUG:	Data file for First red candle short (df_red) is fetched...
+2023-02-20 20:53:34.631895: 	DEBUG:	Input file path for NSE:NIFTYBANK-INDEX is: ../Input/NSE:NIFTYBANK-INDEX_fyers.csv
+2023-02-20 20:53:35.755031: 	INFO:	Number of open positoon is: 0
+2023-02-20 20:53:35.755443: 	INFO:	Checking FIRST RED Short entry condition
+2023-02-20 20:53:35.755650: 	INFO:	(Check Red Entry func)Started...
+2023-02-20 20:53:35.756635: 	**IMPORTANT:	(Check Red Entry)For NSE:NIFTYBANK-INDEX the first red candle High: 41244.85 and Low: 41089.55**
+2023-02-20 20:53:35.756781: 	INFO:	First Red short condition checked for NSE:NIFTYBANK-INDEX. Results are Flag:False SL:0 TP:0 QTY:0
+2023-02-20 20:53:35.756910: 	INFO:	Checking exit conditions and sl update conditions...
+2023-02-20 20:53:35.757048: 	
+
+2023-02-20 20:53:35.757169: 	INFO:	(M&M) In Modify and Manage order function
+2023-02-20 20:53:35.757296: 	INFO:	(M&M) Reading the input file for stock:NSE:NIFTYBANK-INDEX filepath:../Input/NSE:NIFTYBANK-INDEX_fyers.csv
+2023-02-20 20:53:36.751676: 	INFO:	(M&M) Iterating through all open positions...
+2023-02-20 20:53:36.751915: 	INFO:	(M&M) In position checking... Scrip:NSE:NIFTYBEES-EQ quantity open:0 Symbol(the passed param in the func):NSE:NIFTYBANK-INDEX
+2023-02-20 20:53:36.752120: 	INFO:	(M&M) Iterating through all open positions...
+2023-02-20 20:53:36.752313: 	INFO:	(M&M) In position checking... Scrip:NSE:NIFTY2330218200CE quantity open:-50 Symbol(the passed param in the func):NSE:NIFTYBANK-INDEX
+2023-02-20 20:53:36.752529: 	INFO:	Checking done successfully
+2023-02-20 20:53:36.752715: 	INFO:	--------------End of details checking for :NSE:NIFTYBANK-INDEX-----------------
+2023-02-20 20:53:55.486473: 	
+
+
+
+2023-02-20 20:53:55.486613: 	INFO:	--------------Starting to check details for :NSE:NIFTYBANK-INDEX-----------------
+2023-02-20 20:53:55.486731: 	DEBUG:	Current LTP:40701.7 Previous LTP:40701.7
+2023-02-20 20:53:55.486869: 	DEBUG:	The file string for NSE:NIFTYBANK-INDEX is NIFTYBANK
+2023-02-20 20:53:55.489509: 	DEBUG:	Data file for First red candle short (df_red) is fetched...
+2023-02-20 20:53:55.491528: 	DEBUG:	Input file path for NSE:NIFTYBANK-INDEX is: ../Input/NSE:NIFTYBANK-INDEX_fyers.csv
+2023-02-20 20:53:56.536585: 	INFO:	Number of open positoon is: 0
+2023-02-20 20:53:56.536857: 	INFO:	Checking FIRST RED Short entry condition
+2023-02-20 20:53:56.537089: 	INFO:	(Check Red Entry func)Started...
+2023-02-20 20:53:56.537867: 	**IMPORTANT:	(Check Red Entry)For NSE:NIFTYBANK-INDEX the first red candle High: 41244.85 and Low: 41089.55**
+2023-02-20 20:53:56.538056: 	INFO:	First Red short condition checked for NSE:NIFTYBANK-INDEX. Results are Flag:False SL:0 TP:0 QTY:0
+2023-02-20 20:53:56.538226: 	INFO:	Checking exit conditions and sl update conditions...
+2023-02-20 20:53:56.538413: 	
+
+2023-02-20 20:53:56.538580: 	INFO:	(M&M) In Modify and Manage order function
+2023-02-20 20:53:56.538746: 	INFO:	(M&M) Reading the input file for stock:NSE:NIFTYBANK-INDEX filepath:../Input/NSE:NIFTYBANK-INDEX_fyers.csv
+2023-02-20 20:53:57.480067: 	INFO:	(M&M) Iterating through all open positions...
+2023-02-20 20:53:57.480337: 	INFO:	(M&M) In position checking... Scrip:NSE:NIFTYBEES-EQ quantity open:0 Symbol(the passed param in the func):NSE:NIFTYBANK-INDEX
+2023-02-20 20:53:57.480569: 	INFO:	(M&M) Iterating through all open positions...
+2023-02-20 20:53:57.480790: 	INFO:	(M&M) In position checking... Scrip:NSE:NIFTY2330218200CE quantity open:-50 Symbol(the passed param in the func):NSE:NIFTYBANK-INDEX
+2023-02-20 20:53:57.481067: 	INFO:	Checking done successfully
+2023-02-20 20:53:57.481309: 	INFO:	--------------End of details checking for :NSE:NIFTYBANK-INDEX-----------------
+2023-02-20 20:54:28.275960: 	
+
+
+
+2023-02-20 20:54:28.276135: 	INFO:	--------------Starting to check details for :NSE:NIFTYBANK-INDEX-----------------
+2023-02-20 20:54:28.276313: 	DEBUG:	Current LTP:40701.7 Previous LTP:None
+2023-02-20 20:54:28.276496: 	DEBUG:	The file string for NSE:NIFTYBANK-INDEX is NIFTYBANK
+2023-02-20 20:54:28.279850: 	DEBUG:	Data file for First red candle short (df_red) is fetched...
+2023-02-20 20:54:28.282412: 	DEBUG:	Input file path for NSE:NIFTYBANK-INDEX is: ../Input/NSE:NIFTYBANK-INDEX_fyers.csv
+2023-02-20 20:54:29.300871: 	INFO:	Number of open positoon is: 0
+2023-02-20 20:54:29.301150: 	INFO:	Checking FIRST RED Short entry condition
+2023-02-20 20:54:29.301373: 	INFO:	(Check Red Entry func)Started...
+2023-02-20 20:54:29.302349: 	**IMPORTANT:	(Check Red Entry)For NSE:NIFTYBANK-INDEX the first red candle High: 41244.85 and Low: 41089.55**
+2023-02-20 20:54:29.302569: 	ERROR:	** Error in the stockFY.py. Check the deepLogger.log for more details.
+2023-02-20 20:54:48.126768: 	
+
+
+
+2023-02-20 20:54:48.126965: 	INFO:	--------------Starting to check details for :NSE:NIFTYBANK-INDEX-----------------
+2023-02-20 20:54:48.127128: 	DEBUG:	Current LTP:40701.7 Previous LTP:40701.7
+2023-02-20 20:54:48.127294: 	DEBUG:	The file string for NSE:NIFTYBANK-INDEX is NIFTYBANK
+2023-02-20 20:54:48.130520: 	DEBUG:	Data file for First red candle short (df_red) is fetched...
+2023-02-20 20:54:48.133059: 	DEBUG:	Input file path for NSE:NIFTYBANK-INDEX is: ../Input/NSE:NIFTYBANK-INDEX_fyers.csv
+2023-02-20 20:54:49.164308: 	INFO:	Number of open positoon is: 0
+2023-02-20 20:54:49.164499: 	INFO:	Checking FIRST RED Short entry condition
+2023-02-20 20:54:49.164654: 	INFO:	(Check Red Entry func)Started...
+2023-02-20 20:54:49.166227: 	**IMPORTANT:	(Check Red Entry)For NSE:NIFTYBANK-INDEX the first red candle High: 41244.85 and Low: 41089.55**
+2023-02-20 20:54:49.166563: 	INFO:	First Red short condition checked for NSE:NIFTYBANK-INDEX. Results are Flag:False SL:0 TP:0 QTY:0
+2023-02-20 20:54:49.166790: 	INFO:	Checking exit conditions and sl update conditions...
+2023-02-20 20:54:49.167008: 	
+
+2023-02-20 20:54:49.167146: 	INFO:	(M&M) In Modify and Manage order function
+2023-02-20 20:54:49.167284: 	INFO:	(M&M) Reading the input file for stock:NSE:NIFTYBANK-INDEX filepath:../Input/NSE:NIFTYBANK-INDEX_fyers.csv
+2023-02-20 20:54:50.272285: 	INFO:	(M&M) Iterating through all open positions...
+2023-02-20 20:54:50.272688: 	INFO:	(M&M) In position checking... Scrip:NSE:NIFTYBEES-EQ quantity open:0 Symbol(the passed param in the func):NSE:NIFTYBANK-INDEX
+2023-02-20 20:54:50.272919: 	INFO:	(M&M) Iterating through all open positions...
+2023-02-20 20:54:50.273054: 	INFO:	(M&M) In position checking... Scrip:NSE:NIFTY2330218200CE quantity open:-50 Symbol(the passed param in the func):NSE:NIFTYBANK-INDEX
+2023-02-20 20:54:50.273251: 	INFO:	Checking done successfully
+2023-02-20 20:54:50.273403: 	INFO:	--------------End of details checking for :NSE:NIFTYBANK-INDEX-----------------
+2023-02-20 20:55:09.883167: 	
+
+
+
+2023-02-20 20:55:09.883354: 	INFO:	--------------Starting to check details for :NSE:NIFTYBANK-INDEX-----------------
+2023-02-20 20:55:09.883533: 	DEBUG:	Current LTP:40701.7 Previous LTP:40701.7
+2023-02-20 20:55:09.883714: 	DEBUG:	The file string for NSE:NIFTYBANK-INDEX is NIFTYBANK
+2023-02-20 20:55:09.887206: 	DEBUG:	Data file for First red candle short (df_red) is fetched...
+2023-02-20 20:55:09.889640: 	DEBUG:	Input file path for NSE:NIFTYBANK-INDEX is: ../Input/NSE:NIFTYBANK-INDEX_fyers.csv
+2023-02-20 20:55:10.877200: 	INFO:	Number of open positoon is: 0
+2023-02-20 20:55:10.877526: 	INFO:	Checking FIRST RED Short entry condition
+2023-02-20 20:55:10.877697: 	INFO:	(Check Red Entry func)Started...
+2023-02-20 20:55:10.878673: 	**IMPORTANT:	(Check Red Entry)For NSE:NIFTYBANK-INDEX the first red candle High: 41244.85 and Low: 41089.55**
+2023-02-20 20:55:10.878830: 	INFO:	First Red short condition checked for NSE:NIFTYBANK-INDEX. Results are Flag:False SL:0 TP:0 QTY:0
+2023-02-20 20:55:10.878957: 	INFO:	Checking exit conditions and sl update conditions...
+2023-02-20 20:55:10.879097: 	
+
+2023-02-20 20:55:10.879204: 	INFO:	(M&M) In Modify and Manage order function
+2023-02-20 20:55:10.879319: 	INFO:	(M&M) Reading the input file for stock:NSE:NIFTYBANK-INDEX filepath:../Input/NSE:NIFTYBANK-INDEX_fyers.csv
+2023-02-20 20:55:11.985186: 	INFO:	(M&M) Iterating through all open positions...
+2023-02-20 20:55:11.985650: 	INFO:	(M&M) In position checking... Scrip:NSE:NIFTYBEES-EQ quantity open:0 Symbol(the passed param in the func):NSE:NIFTYBANK-INDEX
+2023-02-20 20:55:11.985845: 	INFO:	(M&M) Iterating through all open positions...
+2023-02-20 20:55:11.986007: 	INFO:	(M&M) In position checking... Scrip:NSE:NIFTY2330218200CE quantity open:-50 Symbol(the passed param in the func):NSE:NIFTYBANK-INDEX
+2023-02-20 20:55:11.986241: 	INFO:	Checking done successfully
+2023-02-20 20:55:11.986435: 	INFO:	--------------End of details checking for :NSE:NIFTYBANK-INDEX-----------------
+2023-02-20 20:55:30.435567: 	
+
+
+
+2023-02-20 20:55:30.435681: 	INFO:	--------------Starting to check details for :NSE:NIFTYBANK-INDEX-----------------
+2023-02-20 20:55:30.435795: 	DEBUG:	Current LTP:40701.7 Previous LTP:40701.7
+2023-02-20 20:55:30.435914: 	DEBUG:	The file string for NSE:NIFTYBANK-INDEX is NIFTYBANK
+2023-02-20 20:55:30.439009: 	DEBUG:	Data file for First red candle short (df_red) is fetched...
+2023-02-20 20:55:30.441442: 	DEBUG:	Input file path for NSE:NIFTYBANK-INDEX is: ../Input/NSE:NIFTYBANK-INDEX_fyers.csv
+2023-02-20 20:55:31.441833: 	INFO:	Number of open positoon is: 0
+2023-02-20 20:55:31.442003: 	INFO:	Checking FIRST RED Short entry condition
+2023-02-20 20:55:31.442143: 	INFO:	(Check Red Entry func)Started...
+2023-02-20 20:55:31.442938: 	**IMPORTANT:	(Check Red Entry)For NSE:NIFTYBANK-INDEX the first red candle High: 41244.85 and Low: 41089.55**
+2023-02-20 20:55:31.443096: 	INFO:	First Red short condition checked for NSE:NIFTYBANK-INDEX. Results are Flag:False SL:0 TP:0 QTY:0
+2023-02-20 20:55:31.443221: 	INFO:	Checking exit conditions and sl update conditions...
+2023-02-20 20:55:31.443360: 	
+
+2023-02-20 20:55:31.443477: 	INFO:	(M&M) In Modify and Manage order function
+2023-02-20 20:55:31.443599: 	INFO:	(M&M) Reading the input file for stock:NSE:NIFTYBANK-INDEX filepath:../Input/NSE:NIFTYBANK-INDEX_fyers.csv
+2023-02-20 20:55:32.564615: 	INFO:	(M&M) Iterating through all open positions...
+2023-02-20 20:55:32.564956: 	INFO:	(M&M) In position checking... Scrip:NSE:NIFTYBEES-EQ quantity open:0 Symbol(the passed param in the func):NSE:NIFTYBANK-INDEX
+2023-02-20 20:55:32.565126: 	INFO:	(M&M) Iterating through all open positions...
+2023-02-20 20:55:32.565287: 	INFO:	(M&M) In position checking... Scrip:NSE:NIFTY2330218200CE quantity open:-50 Symbol(the passed param in the func):NSE:NIFTYBANK-INDEX
+2023-02-20 20:55:32.565489: 	INFO:	Checking done successfully
+2023-02-20 20:55:32.565676: 	INFO:	--------------End of details checking for :NSE:NIFTYBANK-INDEX-----------------
+2023-02-20 20:55:51.306349: 	
+
+
+
+2023-02-20 20:55:51.306495: 	INFO:	--------------Starting to check details for :NSE:NIFTYBANK-INDEX-----------------
+2023-02-20 20:55:51.306636: 	DEBUG:	Current LTP:40701.7 Previous LTP:40701.7
+2023-02-20 20:55:51.306785: 	DEBUG:	The file string for NSE:NIFTYBANK-INDEX is NIFTYBANK
+2023-02-20 20:55:51.310009: 	DEBUG:	Data file for First red candle short (df_red) is fetched...
+2023-02-20 20:55:51.312473: 	DEBUG:	Input file path for NSE:NIFTYBANK-INDEX is: ../Input/NSE:NIFTYBANK-INDEX_fyers.csv
+2023-02-20 20:55:52.338791: 	INFO:	Number of open positoon is: 0
+2023-02-20 20:55:52.339017: 	INFO:	Checking FIRST RED Short entry condition
+2023-02-20 20:55:52.339202: 	INFO:	(Check Red Entry func)Started...
+2023-02-20 20:55:52.340162: 	**IMPORTANT:	(Check Red Entry)For NSE:NIFTYBANK-INDEX the first red candle High: 41244.85 and Low: 41089.55**
+2023-02-20 20:55:52.340332: 	INFO:	First Red short condition checked for NSE:NIFTYBANK-INDEX. Results are Flag:False SL:0 TP:0 QTY:0
+2023-02-20 20:55:52.340451: 	INFO:	Checking exit conditions and sl update conditions...
+2023-02-20 20:55:52.340579: 	
+
+2023-02-20 20:55:52.340693: 	INFO:	(M&M) In Modify and Manage order function
+2023-02-20 20:55:52.340807: 	INFO:	(M&M) Reading the input file for stock:NSE:NIFTYBANK-INDEX filepath:../Input/NSE:NIFTYBANK-INDEX_fyers.csv
+2023-02-20 20:55:53.371842: 	INFO:	(M&M) Iterating through all open positions...
+2023-02-20 20:55:53.372017: 	INFO:	(M&M) In position checking... Scrip:NSE:NIFTYBEES-EQ quantity open:0 Symbol(the passed param in the func):NSE:NIFTYBANK-INDEX
+2023-02-20 20:55:53.372168: 	INFO:	(M&M) Iterating through all open positions...
+2023-02-20 20:55:53.372327: 	INFO:	(M&M) In position checking... Scrip:NSE:NIFTY2330218200CE quantity open:-50 Symbol(the passed param in the func):NSE:NIFTYBANK-INDEX
+2023-02-20 20:55:53.372526: 	INFO:	Checking done successfully
+2023-02-20 20:55:53.372699: 	INFO:	--------------End of details checking for :NSE:NIFTYBANK-INDEX-----------------
+2023-02-20 20:56:12.217359: 	
+
+
+
+2023-02-20 20:56:12.217487: 	INFO:	--------------Starting to check details for :NSE:NIFTYBANK-INDEX-----------------
+2023-02-20 20:56:12.217616: 	DEBUG:	Current LTP:40701.7 Previous LTP:40701.7
+2023-02-20 20:56:12.217754: 	DEBUG:	The file string for NSE:NIFTYBANK-INDEX is NIFTYBANK
+2023-02-20 20:56:12.221098: 	DEBUG:	Data file for First red candle short (df_red) is fetched...
+2023-02-20 20:56:12.223528: 	DEBUG:	Input file path for NSE:NIFTYBANK-INDEX is: ../Input/NSE:NIFTYBANK-INDEX_fyers.csv
+2023-02-20 20:56:13.320737: 	INFO:	Number of open positoon is: 0
+2023-02-20 20:56:13.321005: 	INFO:	Checking FIRST RED Short entry condition
+2023-02-20 20:56:13.321153: 	INFO:	(Check Red Entry func)Started...
+2023-02-20 20:56:13.322016: 	**IMPORTANT:	(Check Red Entry)For NSE:NIFTYBANK-INDEX the first red candle High: 41244.85 and Low: 41089.55**
+2023-02-20 20:56:13.322165: 	INFO:	First Red short condition checked for NSE:NIFTYBANK-INDEX. Results are Flag:False SL:0 TP:0 QTY:0
+2023-02-20 20:56:13.322286: 	INFO:	Checking exit conditions and sl update conditions...
+2023-02-20 20:56:13.322424: 	
+
+2023-02-20 20:56:13.322543: 	INFO:	(M&M) In Modify and Manage order function
+2023-02-20 20:56:13.322666: 	INFO:	(M&M) Reading the input file for stock:NSE:NIFTYBANK-INDEX filepath:../Input/NSE:NIFTYBANK-INDEX_fyers.csv
+2023-02-20 20:56:14.363203: 	INFO:	(M&M) Iterating through all open positions...
+2023-02-20 20:56:14.363420: 	INFO:	(M&M) In position checking... Scrip:NSE:NIFTYBEES-EQ quantity open:0 Symbol(the passed param in the func):NSE:NIFTYBANK-INDEX
+2023-02-20 20:56:14.363773: 	INFO:	(M&M) Iterating through all open positions...
+2023-02-20 20:56:14.363937: 	INFO:	(M&M) In position checking... Scrip:NSE:NIFTY2330218200CE quantity open:-50 Symbol(the passed param in the func):NSE:NIFTYBANK-INDEX
+2023-02-20 20:56:14.364109: 	INFO:	Checking done successfully
+2023-02-20 20:56:14.364269: 	INFO:	--------------End of details checking for :NSE:NIFTYBANK-INDEX-----------------
+2023-02-20 20:56:33.204399: 	
+
+
+
+2023-02-20 20:56:33.204572: 	INFO:	--------------Starting to check details for :NSE:NIFTYBANK-INDEX-----------------
+2023-02-20 20:56:33.204720: 	DEBUG:	Current LTP:40701.7 Previous LTP:40701.7
+2023-02-20 20:56:33.204862: 	DEBUG:	The file string for NSE:NIFTYBANK-INDEX is NIFTYBANK
+2023-02-20 20:56:33.208175: 	DEBUG:	Data file for First red candle short (df_red) is fetched...
+2023-02-20 20:56:33.210620: 	DEBUG:	Input file path for NSE:NIFTYBANK-INDEX is: ../Input/NSE:NIFTYBANK-INDEX_fyers.csv
+2023-02-20 20:56:34.213713: 	INFO:	Number of open positoon is: 0
+2023-02-20 20:56:34.213900: 	INFO:	Checking FIRST RED Short entry condition
+2023-02-20 20:56:34.214042: 	INFO:	(Check Red Entry func)Started...
+2023-02-20 20:56:34.215419: 	**IMPORTANT:	(Check Red Entry)For NSE:NIFTYBANK-INDEX the first red candle High: 41244.85 and Low: 41089.55**
+2023-02-20 20:56:34.215771: 	INFO:	First Red short condition checked for NSE:NIFTYBANK-INDEX. Results are Flag:False SL:0 TP:0 QTY:0
+2023-02-20 20:56:34.215993: 	INFO:	Checking exit conditions and sl update conditions...
+2023-02-20 20:56:34.216218: 	
+
+2023-02-20 20:56:34.216382: 	INFO:	(M&M) In Modify and Manage order function
+2023-02-20 20:56:34.216513: 	INFO:	(M&M) Reading the input file for stock:NSE:NIFTYBANK-INDEX filepath:../Input/NSE:NIFTYBANK-INDEX_fyers.csv
+2023-02-20 20:56:35.248779: 	INFO:	(M&M) Iterating through all open positions...
+2023-02-20 20:56:35.248995: 	INFO:	(M&M) In position checking... Scrip:NSE:NIFTYBEES-EQ quantity open:0 Symbol(the passed param in the func):NSE:NIFTYBANK-INDEX
+2023-02-20 20:56:35.249220: 	INFO:	(M&M) Iterating through all open positions...
+2023-02-20 20:56:35.249416: 	INFO:	(M&M) In position checking... Scrip:NSE:NIFTY2330218200CE quantity open:-50 Symbol(the passed param in the func):NSE:NIFTYBANK-INDEX
+2023-02-20 20:56:35.249669: 	INFO:	Checking done successfully
+2023-02-20 20:56:35.249890: 	INFO:	--------------End of details checking for :NSE:NIFTYBANK-INDEX-----------------
+2023-02-20 20:56:54.197963: 	
+
+
+
+2023-02-20 20:56:54.198136: 	INFO:	--------------Starting to check details for :NSE:NIFTYBANK-INDEX-----------------
+2023-02-20 20:56:54.198295: 	DEBUG:	Current LTP:40701.7 Previous LTP:40701.7
+2023-02-20 20:56:54.198451: 	DEBUG:	The file string for NSE:NIFTYBANK-INDEX is NIFTYBANK
+2023-02-20 20:56:54.201674: 	DEBUG:	Data file for First red candle short (df_red) is fetched...
+2023-02-20 20:56:54.204068: 	DEBUG:	Input file path for NSE:NIFTYBANK-INDEX is: ../Input/NSE:NIFTYBANK-INDEX_fyers.csv
+2023-02-20 20:56:55.162659: 	INFO:	Number of open positoon is: 0
+2023-02-20 20:56:55.162849: 	INFO:	Checking FIRST RED Short entry condition
+2023-02-20 20:56:55.162997: 	INFO:	(Check Red Entry func)Started...
+2023-02-20 20:56:55.164293: 	**IMPORTANT:	(Check Red Entry)For NSE:NIFTYBANK-INDEX the first red candle High: 41244.85 and Low: 41089.55**
+2023-02-20 20:56:55.164641: 	INFO:	First Red short condition checked for NSE:NIFTYBANK-INDEX. Results are Flag:False SL:0 TP:0 QTY:0
+2023-02-20 20:56:55.164852: 	INFO:	Checking exit conditions and sl update conditions...
+2023-02-20 20:56:55.165066: 	
+
+2023-02-20 20:56:55.165206: 	INFO:	(M&M) In Modify and Manage order function
+2023-02-20 20:56:55.165338: 	INFO:	(M&M) Reading the input file for stock:NSE:NIFTYBANK-INDEX filepath:../Input/NSE:NIFTYBANK-INDEX_fyers.csv
+2023-02-20 20:56:56.326487: 	INFO:	(M&M) Iterating through all open positions...
+2023-02-20 20:56:56.326676: 	INFO:	(M&M) In position checking... Scrip:NSE:NIFTYBEES-EQ quantity open:0 Symbol(the passed param in the func):NSE:NIFTYBANK-INDEX
+2023-02-20 20:56:56.326967: 	INFO:	(M&M) Iterating through all open positions...
+2023-02-20 20:56:56.327132: 	INFO:	(M&M) In position checking... Scrip:NSE:NIFTY2330218200CE quantity open:-50 Symbol(the passed param in the func):NSE:NIFTYBANK-INDEX
+2023-02-20 20:56:56.327341: 	INFO:	Checking done successfully
+2023-02-20 20:56:56.327533: 	INFO:	--------------End of details checking for :NSE:NIFTYBANK-INDEX-----------------
+2023-02-20 20:57:14.947684: 	
+
+
+
+2023-02-20 20:57:14.947871: 	INFO:	--------------Starting to check details for :NSE:NIFTYBANK-INDEX-----------------
+2023-02-20 20:57:14.948052: 	DEBUG:	Current LTP:40701.7 Previous LTP:40701.7
+2023-02-20 20:57:14.948236: 	DEBUG:	The file string for NSE:NIFTYBANK-INDEX is NIFTYBANK
+2023-02-20 20:57:14.951419: 	DEBUG:	Data file for First red candle short (df_red) is fetched...
+2023-02-20 20:57:14.953841: 	DEBUG:	Input file path for NSE:NIFTYBANK-INDEX is: ../Input/NSE:NIFTYBANK-INDEX_fyers.csv
+2023-02-20 20:57:16.015219: 	INFO:	Number of open positoon is: 0
+2023-02-20 20:57:16.015502: 	INFO:	Checking FIRST RED Short entry condition
+2023-02-20 20:57:16.015711: 	INFO:	(Check Red Entry func)Started...
+2023-02-20 20:57:16.016623: 	**IMPORTANT:	(Check Red Entry)For NSE:NIFTYBANK-INDEX the first red candle High: 41244.85 and Low: 41089.55**
+2023-02-20 20:57:16.016798: 	INFO:	First Red short condition checked for NSE:NIFTYBANK-INDEX. Results are Flag:False SL:0 TP:0 QTY:0
+2023-02-20 20:57:16.016952: 	INFO:	Checking exit conditions and sl update conditions...
+2023-02-20 20:57:16.017118: 	
+
+2023-02-20 20:57:16.017268: 	INFO:	(M&M) In Modify and Manage order function
+2023-02-20 20:57:16.017432: 	INFO:	(M&M) Reading the input file for stock:NSE:NIFTYBANK-INDEX filepath:../Input/NSE:NIFTYBANK-INDEX_fyers.csv
+2023-02-20 20:57:16.981689: 	INFO:	(M&M) Iterating through all open positions...
+2023-02-20 20:57:16.981883: 	INFO:	(M&M) In position checking... Scrip:NSE:NIFTYBEES-EQ quantity open:0 Symbol(the passed param in the func):NSE:NIFTYBANK-INDEX
+2023-02-20 20:57:16.982051: 	INFO:	(M&M) Iterating through all open positions...
+2023-02-20 20:57:16.982216: 	INFO:	(M&M) In position checking... Scrip:NSE:NIFTY2330218200CE quantity open:-50 Symbol(the passed param in the func):NSE:NIFTYBANK-INDEX
+2023-02-20 20:57:16.982424: 	INFO:	Checking done successfully
+2023-02-20 20:57:16.982620: 	INFO:	--------------End of details checking for :NSE:NIFTYBANK-INDEX-----------------
+2023-02-20 20:57:35.873670: 	
+
+
+
+2023-02-20 20:57:35.873870: 	INFO:	--------------Starting to check details for :NSE:NIFTYBANK-INDEX-----------------
+2023-02-20 20:57:35.874062: 	DEBUG:	Current LTP:40701.7 Previous LTP:40701.7
+2023-02-20 20:57:35.874244: 	DEBUG:	The file string for NSE:NIFTYBANK-INDEX is NIFTYBANK
+2023-02-20 20:57:35.877711: 	DEBUG:	Data file for First red candle short (df_red) is fetched...
+2023-02-20 20:57:35.880115: 	DEBUG:	Input file path for NSE:NIFTYBANK-INDEX is: ../Input/NSE:NIFTYBANK-INDEX_fyers.csv
+2023-02-20 20:57:36.879407: 	INFO:	Number of open positoon is: 0
+2023-02-20 20:57:36.879622: 	INFO:	Checking FIRST RED Short entry condition
+2023-02-20 20:57:36.879797: 	INFO:	(Check Red Entry func)Started...
+2023-02-20 20:57:36.880589: 	**IMPORTANT:	(Check Red Entry)For NSE:NIFTYBANK-INDEX the first red candle High: 41244.85 and Low: 41089.55**
+2023-02-20 20:57:36.880764: 	INFO:	First Red short condition checked for NSE:NIFTYBANK-INDEX. Results are Flag:False SL:0 TP:0 QTY:0
+2023-02-20 20:57:36.880924: 	INFO:	Checking exit conditions and sl update conditions...
+2023-02-20 20:57:36.881091: 	
+
+2023-02-20 20:57:36.881237: 	INFO:	(M&M) In Modify and Manage order function
+2023-02-20 20:57:36.881389: 	INFO:	(M&M) Reading the input file for stock:NSE:NIFTYBANK-INDEX filepath:../Input/NSE:NIFTYBANK-INDEX_fyers.csv
+2023-02-20 20:57:37.915998: 	INFO:	(M&M) Iterating through all open positions...
+2023-02-20 20:57:37.916228: 	INFO:	(M&M) In position checking... Scrip:NSE:NIFTYBEES-EQ quantity open:0 Symbol(the passed param in the func):NSE:NIFTYBANK-INDEX
+2023-02-20 20:57:37.916571: 	INFO:	(M&M) Iterating through all open positions...
+2023-02-20 20:57:37.916715: 	INFO:	(M&M) In position checking... Scrip:NSE:NIFTY2330218200CE quantity open:-50 Symbol(the passed param in the func):NSE:NIFTYBANK-INDEX
+2023-02-20 20:57:37.916907: 	INFO:	Checking done successfully
+2023-02-20 20:57:37.917082: 	INFO:	--------------End of details checking for :NSE:NIFTYBANK-INDEX-----------------
+2023-02-20 20:57:56.772974: 	
+
+
+
+2023-02-20 20:57:56.773108: 	INFO:	--------------Starting to check details for :NSE:NIFTYBANK-INDEX-----------------
+2023-02-20 20:57:56.773240: 	DEBUG:	Current LTP:40701.7 Previous LTP:40701.7
+2023-02-20 20:57:56.773378: 	DEBUG:	The file string for NSE:NIFTYBANK-INDEX is NIFTYBANK
+2023-02-20 20:57:56.776726: 	DEBUG:	Data file for First red candle short (df_red) is fetched...
+2023-02-20 20:57:56.779122: 	DEBUG:	Input file path for NSE:NIFTYBANK-INDEX is: ../Input/NSE:NIFTYBANK-INDEX_fyers.csv
+2023-02-20 20:57:57.875294: 	INFO:	Number of open positoon is: 0
+2023-02-20 20:57:57.875456: 	INFO:	Checking FIRST RED Short entry condition
+2023-02-20 20:57:57.875596: 	INFO:	(Check Red Entry func)Started...
+2023-02-20 20:57:57.876363: 	**IMPORTANT:	(Check Red Entry)For NSE:NIFTYBANK-INDEX the first red candle High: 41244.85 and Low: 41089.55**
+2023-02-20 20:57:57.876508: 	INFO:	First Red short condition checked for NSE:NIFTYBANK-INDEX. Results are Flag:False SL:0 TP:0 QTY:0
+2023-02-20 20:57:57.876629: 	INFO:	Checking exit conditions and sl update conditions...
+2023-02-20 20:57:57.876832: 	
+
+2023-02-20 20:57:57.876955: 	INFO:	(M&M) In Modify and Manage order function
+2023-02-20 20:57:57.877082: 	INFO:	(M&M) Reading the input file for stock:NSE:NIFTYBANK-INDEX filepath:../Input/NSE:NIFTYBANK-INDEX_fyers.csv
+2023-02-20 20:57:58.997566: 	INFO:	(M&M) Iterating through all open positions...
+2023-02-20 20:57:58.997733: 	INFO:	(M&M) In position checking... Scrip:NSE:NIFTYBEES-EQ quantity open:0 Symbol(the passed param in the func):NSE:NIFTYBANK-INDEX
+2023-02-20 20:57:58.997877: 	INFO:	(M&M) Iterating through all open positions...
+2023-02-20 20:57:58.998019: 	INFO:	(M&M) In position checking... Scrip:NSE:NIFTY2330218200CE quantity open:-50 Symbol(the passed param in the func):NSE:NIFTYBANK-INDEX
+2023-02-20 20:57:58.998184: 	INFO:	Checking done successfully
+2023-02-20 20:57:58.998348: 	INFO:	--------------End of details checking for :NSE:NIFTYBANK-INDEX-----------------
+2023-02-20 20:58:17.737466: 	
+
+
+
+2023-02-20 20:58:17.737633: 	INFO:	--------------Starting to check details for :NSE:NIFTYBANK-INDEX-----------------
+2023-02-20 20:58:17.737794: 	DEBUG:	Current LTP:40701.7 Previous LTP:40701.7
+2023-02-20 20:58:17.737980: 	DEBUG:	The file string for NSE:NIFTYBANK-INDEX is NIFTYBANK
+2023-02-20 20:58:17.741440: 	DEBUG:	Data file for First red candle short (df_red) is fetched...
+2023-02-20 20:58:17.743820: 	DEBUG:	Input file path for NSE:NIFTYBANK-INDEX is: ../Input/NSE:NIFTYBANK-INDEX_fyers.csv
+2023-02-20 20:58:18.782583: 	INFO:	Number of open positoon is: 0
+2023-02-20 20:58:18.782750: 	INFO:	Checking FIRST RED Short entry condition
+2023-02-20 20:58:18.782898: 	INFO:	(Check Red Entry func)Started...
+2023-02-20 20:58:18.783688: 	**IMPORTANT:	(Check Red Entry)For NSE:NIFTYBANK-INDEX the first red candle High: 41244.85 and Low: 41089.55**
+2023-02-20 20:58:18.783829: 	INFO:	First Red short condition checked for NSE:NIFTYBANK-INDEX. Results are Flag:False SL:0 TP:0 QTY:0
+2023-02-20 20:58:18.783952: 	INFO:	Checking exit conditions and sl update conditions...
+2023-02-20 20:58:18.784149: 	
+
+2023-02-20 20:58:18.784278: 	INFO:	(M&M) In Modify and Manage order function
+2023-02-20 20:58:18.784399: 	INFO:	(M&M) Reading the input file for stock:NSE:NIFTYBANK-INDEX filepath:../Input/NSE:NIFTYBANK-INDEX_fyers.csv
+2023-02-20 20:58:19.804236: 	INFO:	(M&M) Iterating through all open positions...
+2023-02-20 20:58:19.804457: 	INFO:	(M&M) In position checking... Scrip:NSE:NIFTYBEES-EQ quantity open:0 Symbol(the passed param in the func):NSE:NIFTYBANK-INDEX
+2023-02-20 20:58:19.804637: 	INFO:	(M&M) Iterating through all open positions...
+2023-02-20 20:58:19.804986: 	INFO:	(M&M) In position checking... Scrip:NSE:NIFTY2330218200CE quantity open:-50 Symbol(the passed param in the func):NSE:NIFTYBANK-INDEX
+2023-02-20 20:58:19.805217: 	INFO:	Checking done successfully
+2023-02-20 20:58:19.805426: 	INFO:	--------------End of details checking for :NSE:NIFTYBANK-INDEX-----------------
+2023-02-20 20:58:38.336496: 	
+
+
+
+2023-02-20 20:58:38.336669: 	INFO:	--------------Starting to check details for :NSE:NIFTYBANK-INDEX-----------------
+2023-02-20 20:58:38.336827: 	DEBUG:	Current LTP:40701.7 Previous LTP:40701.7
+2023-02-20 20:58:38.336983: 	DEBUG:	The file string for NSE:NIFTYBANK-INDEX is NIFTYBANK
+2023-02-20 20:58:38.340202: 	DEBUG:	Data file for First red candle short (df_red) is fetched...
+2023-02-20 20:58:38.342645: 	DEBUG:	Input file path for NSE:NIFTYBANK-INDEX is: ../Input/NSE:NIFTYBANK-INDEX_fyers.csv
+2023-02-20 20:58:39.363452: 	INFO:	Number of open positoon is: 0
+2023-02-20 20:58:39.363646: 	INFO:	Checking FIRST RED Short entry condition
+2023-02-20 20:58:39.363781: 	INFO:	(Check Red Entry func)Started...
+2023-02-20 20:58:39.365167: 	**IMPORTANT:	(Check Red Entry)For NSE:NIFTYBANK-INDEX the first red candle High: 41244.85 and Low: 41089.55**
+2023-02-20 20:58:39.365374: 	INFO:	First Red short condition checked for NSE:NIFTYBANK-INDEX. Results are Flag:False SL:0 TP:0 QTY:0
+2023-02-20 20:58:39.365507: 	INFO:	Checking exit conditions and sl update conditions...
+2023-02-20 20:58:39.365645: 	
+
+2023-02-20 20:58:39.365757: 	INFO:	(M&M) In Modify and Manage order function
+2023-02-20 20:58:39.365867: 	INFO:	(M&M) Reading the input file for stock:NSE:NIFTYBANK-INDEX filepath:../Input/NSE:NIFTYBANK-INDEX_fyers.csv
+2023-02-20 20:58:40.375892: 	INFO:	(M&M) Iterating through all open positions...
+2023-02-20 20:58:40.376087: 	INFO:	(M&M) In position checking... Scrip:NSE:NIFTYBEES-EQ quantity open:0 Symbol(the passed param in the func):NSE:NIFTYBANK-INDEX
+2023-02-20 20:58:40.376245: 	INFO:	(M&M) Iterating through all open positions...
+2023-02-20 20:58:40.376395: 	INFO:	(M&M) In position checking... Scrip:NSE:NIFTY2330218200CE quantity open:-50 Symbol(the passed param in the func):NSE:NIFTYBANK-INDEX
+2023-02-20 20:58:40.376591: 	INFO:	Checking done successfully
+2023-02-20 20:58:40.376802: 	INFO:	--------------End of details checking for :NSE:NIFTYBANK-INDEX-----------------
