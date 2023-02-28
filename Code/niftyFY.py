@@ -25,7 +25,7 @@ def write_log(text):
 #####################################################
 def get_intermediate_file(stock):
 	filename = stock+'_fyers.csv'
-	filepath='../Input/'+filename
+	filepath='../Intermediates/'+filename
 	df=pd.DataFrame(columns=['SYMBOL','ENTRY_TYPE','ENTRY_PRICE','SL','TP','STRATEGY'])
 	if not exists(filepath):
 		df.to_csv(filepath,index=False)
@@ -58,8 +58,10 @@ def place_sell_order(symbol,quantity,fyers):
 
 	try:
 
-		fyers.place_order(data)
-		print(" Order placed")
+		res=fyers.place_order(data)
+		print(res)
+		
+		
 		write_log("INFO:\tOrder placement successful at {}".format(datetime.datetime.now()))
 	except Exception as e:
 		write_log("ERROR:\tOrder placement failed at {}".format(datetime.datetime.now()))
@@ -138,6 +140,9 @@ def modify_manage_order(symbol,filepath,ltp,fyers):
 			write_log("INFO:\t(M&M) In position checking... Scrip:{} quantity open:{} Symbol(the passed param in the func):{}".format(scrip,quantity,symbol))
 
 			if scrip == symbol and quantity>0:
+
+				
+
 				if strategy=='RED':
 					write_log("INFO:\t(M&M) Open position detected in RED candle strategy...")
 					# If 1:1 is reached then modify the sl to just 0.2% down from the entry price
@@ -153,7 +158,13 @@ def modify_manage_order(symbol,filepath,ltp,fyers):
 						sl_price=entry_price+(0.002*entry_price) 
 						sl_price  = round(sl_price,1)
 						write_log("INFO:\t(M&M) SL price modified {}".format(symbol))
-						write_order_to_file(filepath,symbol,'SELL',entry_price,sl_price,tp_price,'RED')				
+						write_order_to_file(filepath,symbol,'SELL',entry_price,sl_price,tp_price,'RED')		
+
+					#If it is more than 3:15 close all imemdiately
+					if (datetime.datetime.now().hour==18 and datetime.datetime.now().minute==45):
+						exit_buy_order(symbol,quantity,fyers)
+
+
 
 
 	else:
@@ -182,7 +193,7 @@ def get_clear_balance(fyers):
 ###########################################
 # Check entry criterias
 ###########################################
-def num_of_open_position(fyers):
+def pos_details_and_count(fyers):
 	'''
 	Returns the number of open positon at any point of time
 	'''
@@ -196,12 +207,12 @@ def num_of_open_position(fyers):
 		sq = trades['sellQty']
 		if 'EQ' in stock and abs(bq-sq)>0:
 			count+=1
-	print(" Num open positoons:{}".format(count))
+	print(" Num open positons:{}".format(count))
 	write_log("INFO:\tNumber of open positoon is: {}".format(count))
-	return count
+	return pos,count
 
 
-def position_taken(symbol,fyers):
+def position_taken(symbol,fyers,entry_type,position_json):
 	'''
 	Checks if a particular position is already open
 	1. Check if the SYMBOL is open in current positions
@@ -210,7 +221,8 @@ def position_taken(symbol,fyers):
 	'''
 	write_log('INFO:\t(Position taken func) Checking if already position is taken\n')
 	flag = False
-	pos=fyers.positions()
+	#pos=fyers.positions()
+	pos=position_json
 	netPos=pos['netPositions']
 	for trades in netPos:
 		stock = trades['symbol']
@@ -228,7 +240,7 @@ def position_taken(symbol,fyers):
 		scrip=symbol
 		#write_log("DEBUG:\t(Position taken func) Scrip:{} Symbol:{} BQ:{} SQ:{} Side:{}".format(scrip,stock,bq,sq,side))
 
-		if (abs(bq-sq)!=0) and 'BANKBEES' in stock and side == 'SELL':
+		if (abs(bq-sq)!=0) and 'BANKBEES' in stock and side == entry_type:
 			flag = True
 			write_log("INFO:\t(Position taken func) Position is already taken\n")
 			break
@@ -253,8 +265,9 @@ def get_sl_tp(symbol,position_type,high,low,max_risk,ltp):
 	diff= abs(high-low)
 	#Quantity calculation
 	#Convert BANKNIFTY to BANKBESS by dividing by 100
-	beesdiff=int(diff/100)-10
-
+	beesdiff=(diff-10)/100
+	beesdiff=round(beesdiff,1)
+	
 
 	quantity = math.ceil(int(max_risk)/beesdiff) # Quantity identified
 	if quantity>400:
@@ -352,7 +365,7 @@ def check_entry_bnf(symbol,ltp,pltp,fyers):
 
 		#Check How many positions are open... No more than 10 position should be open at one point of time
 		# Get the list of stocks allowed to be entered using the different strategies
-		open_position = num_of_open_position(fyers)
+		position_json,open_position = pos_details_and_count(fyers)
 		
 
 
@@ -364,7 +377,7 @@ def check_entry_bnf(symbol,ltp,pltp,fyers):
 				print(" Signal generated")
 				write_log("INFO:\t***Sell signal generated in {} ***".format(symbol))
 
-				if not position_taken(symbol,fyers):
+				if not position_taken(symbol,fyers,entry_type,position_json):
 					#Check and place order only if FUNDS are available
 					avail_fund = get_clear_balance(fyers)
 					margin_req = round(((ltp*qty)/5)+1,1)#1 is used as a buffer 
@@ -378,13 +391,13 @@ def check_entry_bnf(symbol,ltp,pltp,fyers):
 				
 						try:
 							limit_price = round((low-(low*0.0003)),1)
-							#place_sell_order(symbol,qty,fyers)
+							place_sell_order(symbol,qty,fyers)
 							write_log("INFO:\tLimit price: {}".format(limit_price))
-							place_sell_order_limit(symbol,qty,fyers,limit_price)
+							#place_sell_order_limit(symbol,qty,fyers,limit_price)
 							write_log("INFO:\tSell order function executed")
 						except Exception as e:
 							print(e)
-							write_log("ERROR:\tError occurred while executing Place sell order function (From Firsr Red short). Check the deepLogger.log for more details")
+							write_log("ERROR:\tError occurred while executing Place sell order function (From First Red short). Check the deepLogger.log for more details")
 
 						write_log("INFO:\tWriting order details to the input file...")
 						write_order_to_file(ORDER_DETAILS_FILE_PATH,symbol,entry_type,ltp,sl,tp,'RED')
@@ -412,6 +425,7 @@ def check_entry_bnf(symbol,ltp,pltp,fyers):
 		print("----------------------------End of Iteration--------------------------------")
 		write_log("INFO:\t--------------End of details checking for :{}-----------------".format(symbol))
 
+		
 
             	
 
@@ -423,6 +437,8 @@ def check_entry_bnf(symbol,ltp,pltp,fyers):
 		logging.error("------{}-------".format(datetime.datetime.now()))
 		logging.error("From the Main catch loop")
 		logging.error(e)
+
+
 
 
 

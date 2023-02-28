@@ -91,11 +91,6 @@ def remove_pending_orders(fyers):
                   fyers.cancel_order(data)
                   print(" All Pending Orders Cancelled")
 
-files=os.listdir("../Data/Intraday/5min/")
-print("All files")
-print(files)
-
-
 
 def place_sell_order_limit(symbol,qty,fyers,limit_price):
       '''
@@ -121,7 +116,7 @@ def cleanup():
       '''
       cleans up the mess automatically
       '''
-      
 
+print(fyers.positions())
 
 

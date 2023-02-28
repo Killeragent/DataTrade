@@ -24,7 +24,7 @@ def write_log(text):
 #####################################################
 def get_intermediate_file(stock):
 	filename = stock+'_fyers.csv'
-	filepath='../Input/'+filename
+	filepath='../Intermediates/'+filename
 	df=pd.DataFrame(columns=['SYMBOL','ENTRY_TYPE','ENTRY_PRICE','SL','TP','STRATEGY'])
 	if not exists(filepath):
 		df.to_csv(filepath,index=False)
@@ -100,7 +100,7 @@ def place_sell_order_limit(symbol,quantity,fyers,limit_price):
 	'''
 	Sell order placing function for limit order
 	'''
-	quantity=1
+	
 	data = {"symbol":symbol,"qty":quantity,"type":1,"side":-1,"productType":"INTRADAY","limitPrice":limit_price,"stopPrice":0,"validity":"DAY","disclosedQty":0,"offlineOrder":"False","stopLoss":0,"takeProfit":0}
 	write_log("INFO:\t(Sell order) Placing LIMIT sell order for {}".format(symbol))
 
@@ -143,7 +143,7 @@ def place_buy_order_limit(symbol,quantity,fyers,limit_price):
 	'''
 	Sell order placing function for limit order
 	'''
-	quantity=1
+	
 	data = {"symbol":symbol,"qty":quantity,"type":1,"side":1,"productType":"INTRADAY","limitPrice":limit_price,"stopPrice":0,"validity":"DAY","disclosedQty":0,"offlineOrder":"False","stopLoss":0,"takeProfit":0}
 	write_log("INFO:\t(BUY order) Placing LIMIT BUY order for {}".format(symbol))
 
@@ -205,9 +205,12 @@ def modify_manage_order(symbol,filepath,ltp,fyers):
 			write_log("INFO:\t(M&M) Iterating through all open positions...")
 			scrip =pos['symbol']
 			quantity=int(pos['sellQty']-pos['buyQty'])
-			write_log("INFO:\t(M&M) In position checking... Scrip:{} quantity open:{} Symbol(the passed param in the func):{}".format(scrip,quantity,symbol))
+			#write_log("INFO:\t(M&M) In position checking... Scrip:{} quantity open:{} Symbol(the passed param in the func):{}".format(scrip,quantity,symbol))
 
 			if scrip == symbol and quantity>0:
+
+
+
 				if strategy=='RED':
 					write_log("INFO:\t(M&M) Open position detected in RED candle strategy...")
 					# If 1:1 is reached then modify the sl to just 0.2% down from the entry price
@@ -223,7 +226,11 @@ def modify_manage_order(symbol,filepath,ltp,fyers):
 						sl_price=entry_price+(0.002*entry_price) 
 						sl_price  = round(sl_price,1)
 						write_log("INFO:\t(M&M) SL price modified {}".format(symbol))
-						write_order_to_file(filepath,symbol,'SELL',entry_price,sl_price,tp_price,'RED')				
+						write_order_to_file(filepath,symbol,'SELL',entry_price,sl_price,tp_price,'RED')	
+
+					if (datetime.datetime.now().hour==18 and datetime.datetime.now().minute==45):
+						exit_buy_order(symbol,quantity,fyers)
+									
 				
 				
 				if strategy=='SECONDCANDLE':
@@ -233,12 +240,19 @@ def modify_manage_order(symbol,filepath,ltp,fyers):
 							exit_buy_order(symbol,quantity,fyers)
 						if ltp<=tp_price:
 							exit_buy_order(symbol,quantity,fyers)
+
+						if (datetime.datetime.now().hour==18 and datetime.datetime.now().minute==45):
+							exit_buy_order(symbol,quantity,fyers)
+							
 						
 					if entry_type=='BUY':
 						if ltp<=sl_price:
 							exit_sell_order(symbol,quantity,fyers)
 						if ltp>=tp_price:
 							exit_sell_order(symbol,quantity,fyers)
+						if (datetime.datetime.now().hour==18 and datetime.datetime.now().minute==45):
+							exit_sell_order(symbol,quantity,fyers)
+							
 
 				
 
@@ -264,10 +278,51 @@ def get_clear_balance(fyers):
 
 
 
+
+
+def get_max_entry(symbol,file_string,strategy):
+
+	max_entry=0
+	if strategy=='RED':
+
+		dfs=pd.read_csv('../Input/red_candle_short_stocks.csv',header=0)
+		dfs=dfs.loc[dfs['STOCKS'] == file_string]
+		max_entry=dfs['MAX_ENTRY'].values[0]
+
+
+	if strategy=='SECONDCANDLE':
+
+		dfs=pd.read_csv('../Input/second30bolist.csv',header=0)
+		dfs=dfs.loc[dfs['STOCKS'] == file_string]
+		max_entry=dfs['MAX_ENTRY'].values[0]
+
+	if strategy=='RELIANCE':
+		max_entry=2
+
+	return max_entry
+
+
+
+def increase_max_entry(symbol,file_string,strategy):
+	pass 
+
+def decrease_max_entry(symbol,file_string,strategy):
+	if strategy=='SECONDCANDLE':
+
+		df=pd.read_csv('../Input/second30bolist.csv',header=0)
+		dfs=df.loc[df['STOCKS'] == file_string]
+		max_entry=dfs['MAX_ENTRY'].values[0]
+		print(dfs)
+		df.loc[df['STOCKS'] == file_string, 'MAX_ENTRY'] = max_entry-1
+		df.to_csv('../Input/second30bolist.csv',index=False)
+
+
+
+
 ###########################################
 # Check entry criterias
 ###########################################
-def num_of_open_position(fyers):
+def pos_details_and_count(fyers):
 	'''
 	Returns the number of open positon at any point of time
 	'''
@@ -283,10 +338,10 @@ def num_of_open_position(fyers):
 			count+=1
 	print(" Num open positoons:{}".format(count))
 	write_log("INFO:\tNumber of open positoon is: {}".format(count))
-	return count
+	return pos,count
 
 
-def position_taken(symbol,fyers):
+def position_taken(symbol,fyers,position_json):
 	'''
 	Checks if a particular position is already open
 	1. Check if the SYMBOL is open in current positions
@@ -295,7 +350,8 @@ def position_taken(symbol,fyers):
 	'''
 	write_log('INFO:\t(Position taken func) Checking if already position is taken')
 	flag = False
-	pos=fyers.positions()
+	#pos=fyers.positions()
+	pos=position_json
 	netPos=pos['netPositions']
 	for trades in netPos:
 		stock = trades['symbol']
@@ -320,38 +376,40 @@ def position_taken(symbol,fyers):
 
 	return flag
 
-	def position_taken_both_side(symbol,entry_type,fyers):
+def position_taken_both_side(symbol,entry_type,fyers,position_json):
 
-		'''
-		Checks if a particular position is already open for the second 30 min BO candle
-		1. Check if the SYMBOL is open in current positions
-		2. Check from positions.csv
-		3. Decide
-		'''
-		write_log('INFO:\t(Position taken func) Checking if already position is taken')
-		flag = False
-		pos=fyers.positions()
-		netPos=pos['netPositions']
-		for trades in netPos:
-			stock = trades['symbol']
-			unrelProfit =trades['unrealized_profit']
-			relProfit = trades['realized_profit']
-			side = trades['side']
-			bq = trades['buyQty']
-			sq = trades['sellQty']
+	'''
+	Checks if a particular position is already open for the second 30 min BO candle
+	1. Check if the SYMBOL is open in current positions
+	2. Check from positions.csv
+	3. Decide
+	'''
+	write_log('INFO:\t(Position taken func) Checking if already position is taken')
+	flag = False
+	#pos=fyers.positions()
+	pos=position_json
+	print(pos)
+	netPos=pos['netPositions']
+	for trades in netPos:
+		stock = trades['symbol']
+		unrelProfit =trades['unrealized_profit']
+		relProfit = trades['realized_profit']
+		side = trades['side']
+		bq = trades['buyQty']
+		sq = trades['sellQty']
 
-			if side==1:
-				side = 'BUY'
-			if side==-1:
-				side = 'SELL'
+		if side==1:
+			side = 'BUY'
+		if side==-1:
+			side = 'SELL'
 
-			scrip=symbol
-			#write_log("DEBUG:\t(Position taken func) Scrip:{} Symbol:{} BQ:{} SQ:{} Side:{}".format(scrip,stock,bq,sq,side))
+		scrip=symbol
+		#write_log("DEBUG:\t(Position taken func) Scrip:{} Symbol:{} BQ:{} SQ:{} Side:{}".format(scrip,stock,bq,sq,side))
 
-			if (abs(bq-sq)!=0) and scrip== stock and side == entry_type:
-				flag = True
-				break
-		
+		if (abs(bq-sq)!=0) and scrip== stock and side == entry_type:
+			flag = True
+			break
+	
 
 	return flag
 
@@ -413,31 +471,32 @@ def check_red_entry(symbol,df,ltp,pltp):
 	max_risk = 400
 	high=0
 	low=0
-	if len(df)>0:
-		opens=df['O'].values
-		closes=df['C'].values
-		highs=df['H'].values
-		lows=df['L'].values
-		high=0 
-		low=0
-		for i in range(0,len(df)):
-			if closes[i]<opens[i]:
-				if abs(highs[i]-lows[i])<(ltp*0.007):
-					high=highs[i]
-					low=lows[i]
-					break
-	write_log("INFO:\t(Check Red Entry)For {} the first red candle High: {} and Low: {}".format(symbol,high,low))
-	if pltp>=low and pltp<=high:
-			if ltp<low:
-				print("INFO:\t(Check Red Entry) SEll trigger occurred ")
-				write_log("INFO:\t(Check red Entry) SEll trigger occurred'''")
-				qt,sl,tp=get_sl_tp(symbol,'SELL',high,low,max_risk,ltp)
-				flag=True
-				entry_type='SELL'
-				write_log('INFO:\t(Check Red Entry func) STrategy triggered')
-			else:
-				print(" Checking.....{}".format(datetime.datetime.now()))
-				write_log("INFO:\t(Check Red Entry func) strategy not triggered")
+	if ((datetime.datetime.now().hour==12) or (datetime.datetime.now().hour==13 and datetime.datetime.now().minute<=35)):
+		if len(df)>0:
+			opens=df['O'].values
+			closes=df['C'].values
+			highs=df['H'].values
+			lows=df['L'].values
+			high=0 
+			low=0
+			for i in range(0,len(df)):
+				if closes[i]<opens[i]:
+					if abs(highs[i]-lows[i])<(ltp*0.007):
+						high=highs[i]
+						low=lows[i]
+						break
+		write_log("INFO:\t(Check Red Entry)For {} the first red candle High: {} and Low: {}".format(symbol,high,low))
+		if pltp>=low and pltp<=high:
+				if ltp<low:
+					print("INFO:\t(Check Red Entry) SEll trigger occurred ")
+					write_log("INFO:\t(Check red Entry) SEll trigger occurred'''")
+					qt,sl,tp=get_sl_tp(symbol,'SELL',high,low,max_risk,ltp)
+					flag=True
+					entry_type='SELL'
+					write_log('INFO:\t(Check Red Entry func) STrategy triggered')
+				else:
+					print(" Checking.....{}".format(datetime.datetime.now()))
+					write_log("INFO:\t(Check Red Entry func) strategy not triggered")
 
 	return flag,entry_type,sl,tp,qt,high,low
 
@@ -506,7 +565,7 @@ def second_30_breakout(symbol,df,ltp,pltp):
 		if len(df)>1:
 			high=df['H'].values[1]
 			low=df['L'].values[1]
-			if abs(highs[i]-lows[i])<(ltp*0.007):
+			if abs(high-low)<(ltp*0.007):
 				if pltp>=low and pltp<=high:
 					if ltp<low:
 						print("INFO:\t(second 30 BO) SEll trigger occurred ")
@@ -514,7 +573,7 @@ def second_30_breakout(symbol,df,ltp,pltp):
 						qt,sl,tp=get_sl_tp(symbol,'SELL',high,low,max_risk,ltp)
 						flag=True
 						entry_type='SELL'
-						write_log('INFO:\t(CSecond 30 BO) STrategy triggered')
+						write_log('INFO:\t(Second 30 BO) STrategy triggered')
 				if pltp>=low and pltp<=high:
 					if ltp>high:
 						print("INFO:\t(second 30 BO) BUY trigger occurred ")
@@ -616,7 +675,7 @@ def check_entry_stocks(symbol,ltp,pltp,fyers):
 
 		#1. fetch the data file for first red candle short (This data file is purged daily)
 		if symbol in second_candle_list:
-			print("YES HERE")
+			
 			df_second=pd.read_csv("../Data/Intraday/30min/"+file_string+".csv",header=0)
 			write_log("DEBUG:\tData file for second 30 candle short (df_second) is fetched...")
 
@@ -638,8 +697,8 @@ def check_entry_stocks(symbol,ltp,pltp,fyers):
 
 		#Check How many positions are open... No more than 10 position should be open at one point of time
 		# Get the list of stocks allowed to be entered using the different strategies
-		open_position = num_of_open_position(fyers)
-		
+		position_json,open_position = pos_details_and_count(fyers)
+		avail_fund =get_clear_balance(fyers)-30000
 
 
 		if open_position<10:
@@ -650,52 +709,57 @@ def check_entry_stocks(symbol,ltp,pltp,fyers):
 			# Strategy 1: Second 30 minute Canlde Breakout Strategy
 			write_log("INFO:\tChecking second 30 BO strategy")
 			if symbol in second_candle_list:
-				write_log("INFO:\t{} exists in the second candle lists".format(symbol))
-				# Check for strategy
-				write_log("INFO:\tChecking second 30 strategy")
-				flag,entry_type,sl,tp,qty,high,low = second_30_breakout(symbol,df_second,ltp,pltp)
-				write_log("INFO:\t5 second 30 condition checked for {}. Results are Flag:{} SL:{} TP:{} QTY:{}".format(symbol,flag,sl,tp,qty))
-				
-
-				if flag==True:
-					print(" Signal generated")
-					write_log("INFO:\t***Sell signal generated in {} ***".format(symbol))
-
-					if not position_taken_both_side(symbol,entry_type,fyers):
-						#Check and place order only if FUNDS are available
-						avail_fund = get_clear_balance(fyers)
-						margin_req = round(((ltp*qty)/5)+1,1) #1 is used as a buffer 
-						write_log("INFO:\tAvailable margin to take trade: {}. Margin required to take trade: {}".format(avail_fund,margin_req))
-
-						if avail_fund>=margin_req:
-							write_log("---------------------------------------------------------")
-							write_log("INFO:\tPreparing to take  Second 30 min candle Psotion")
-							write_log("---------------------------------------------------------")
-							print("INFO:\tPreparing to take  position")
+				if get_max_entry(symbol,file_string,'SECONDCANDLE')>0:
+					write_log("INFO:\t{} exists in the second candle lists".format(symbol))
+					# Check for strategy
+					write_log("INFO:\tChecking second 30 strategy")
+					flag,entry_type,sl,tp,qty,high,low = second_30_breakout(symbol,df_second,ltp,pltp)
+					write_log("INFO:\tsecond 30 condition checked for {}. Results are Flag:{} SL:{} TP:{} QTY:{}".format(symbol,flag,sl,tp,qty))
 					
-							try:
-								if entry_type=='SELL':
-									limit_price = round((low-(low*0.0003)),1)
-									write_log("INFO:\tLimit price: {}".format(limit_price))
-									place_sell_order_limit(symbol,qty,fyers,limit_price)
-									write_log("INFO:\tSell order function executed")
-								if entry_type=='BUY':
-									limit_price = round((high+(high*0.0003)),1)
-									write_log("INFO:\tLimit price: {}".format(limit_price))
-									place_buy_order_limit(symbol,qty,fyers,limit_price)
-									write_log("INFO:\tBUY order function executed")
 
-							except Exception as e:
-								print(e)
-								write_log("ERROR:\tError occurred while executing Place sell order function(From 5 EMA short). Check the deepLogger.log for more details.")
+					if flag==True:
+						print(" Signal generated")
+						write_log("INFO:\t***Sell signal generated in {} ***".format(symbol))
 
-							write_log("INFO:\tWriting order details to the input file...")
-							write_order_to_file(ORDER_DETAILS_FILE_PATH,symbol,entry_type,ltp,sl,tp,'SECONDCANDLE')
-							write_log("INFO:\tWriting order function completed")
-							write_log("----------------------------------------------")
-						else:
-							print(" Enough margin is not available. Check log for details")
-							write_log("ERROR:\tMargin not available. Require margin: {} , Funds available: {}".format(margin_req,avail_fund))
+						if not position_taken_both_side(symbol,entry_type,fyers,position_json):
+							#Check and place order only if FUNDS are available
+							
+							margin_req = round(((ltp*qty)/5)+1,1) #1 is used as a buffer 
+							write_log("INFO:\tAvailable margin to take trade: {}. Margin required to take trade: {}".format(avail_fund,margin_req))
+
+							if avail_fund>=margin_req:
+								write_log("---------------------------------------------------------")
+								write_log("INFO:\tPreparing to take  Second 30 min candle Psotion")
+								write_log("---------------------------------------------------------")
+								print("INFO:\tPreparing to take  position")
+						
+								try:
+									if entry_type=='SELL':
+										limit_price = round((low-(low*0.0003)),1)
+										write_log("INFO:\tLimit price: {}".format(limit_price))
+										place_sell_order_limit(symbol,qty,fyers,limit_price)
+										decrease_max_entry(symbol,file_string,'SECONDCANDLE')
+										write_log("INFO:\tSell order function executed")
+									if entry_type=='BUY':
+										limit_price = round((high+(high*0.0003)),1)
+										write_log("INFO:\tLimit price: {}".format(limit_price))
+										place_buy_order_limit(symbol,qty,fyers,limit_price)
+										decrease_max_entry(symbol,file_string,'SECONDCANDLE')
+										write_log("INFO:\tBUY order function executed")
+
+								except Exception as e:
+									print(e)
+									write_log("ERROR:\tError occurred while executing Place sell order function(From 5 EMA short). Check the deepLogger.log for more details.")
+
+								write_log("INFO:\tWriting order details to the input file...")
+								write_order_to_file(ORDER_DETAILS_FILE_PATH,symbol,entry_type,ltp,sl,tp,'SECONDCANDLE')
+								write_log("INFO:\tWriting order function completed")
+								write_log("----------------------------------------------")
+							else:
+								print(" Enough margin is not available. Check log for details")
+								write_log("ERROR:\tMargin not available. Require margin: {} , Funds available: {}".format(margin_req,avail_fund))
+				else:
+					write_log("LIMIT REACHED:\t Max entry limit reached.")
 			
 
 
@@ -713,9 +777,9 @@ def check_entry_stocks(symbol,ltp,pltp,fyers):
 					print(" Signal generated")
 					write_log("INFO:\t***Sell signal generated in {} ***".format(symbol))
 
-					if not position_taken(symbol,fyers):
+					if not position_taken(symbol,fyers,position_json):
 						#Check and place order only if FUNDS are available
-						avail_fund = get_clear_balance(fyers)-30000 # 30K is set aside for BNF trades
+						#avail_fund = get_clear_balance(fyers)-30000 # 30K is set aside for BNF trades
 						margin_req = round(((ltp*qty)/5)+1,1)#1 is used as a buffer 
 						write_log("INFO:\tAvailable margin to take trade: {}. Margin required to take trade: {}".format(avail_fund,margin_req))
 
@@ -748,7 +812,7 @@ def check_entry_stocks(symbol,ltp,pltp,fyers):
 
 
 			# Strategy 3: Reliance PDH, PDL BO Strategy
-			'''
+			
 			if 'RELIANCE' in symbol:
 				write_log("INFO:\t{} exists in the Red candle stock list".format(symbol))
 				write_log("INFO:\tChecking FIRST RED Short entry condition")
@@ -757,9 +821,9 @@ def check_entry_stocks(symbol,ltp,pltp,fyers):
 					print(" Signal generated")
 					write_log("INFO:\t*** {} signal generated in RELIANCE ***".format(entry_type))
 
-					if not position_taken_both_side(symbol,entry_type,fyers):
+					if not position_taken_both_side(symbol,entry_type,fyers,position_json):
 						#Check and place order only if FUNDS are available
-						avail_fund = get_clear_balance(fyers)
+						#avail_fund = get_clear_balance(fyers)
 						margin_req = round(((ltp*qty)/5)+1,1) #1 is used as a buffer 
 						write_log("INFO:\tAvailable margin to take trade: {}. Margin required to take trade: {}".format(avail_fund,margin_req))
 
@@ -792,7 +856,7 @@ def check_entry_stocks(symbol,ltp,pltp,fyers):
 						else:
 							print(" Enough margin is not available. Check log for details")
 							write_log("ERROR:\tMargin not available. Require margin: {} , Funds available: {}".format(margin_req,avail_fund))
-			'''
+			
 
 
 		if open_position>=10:
@@ -830,12 +894,5 @@ def check_entry_stocks(symbol,ltp,pltp,fyers):
 # For debugging quantities are set to 1.
 # Change it accordingly
 #########################
-
-
-
-
-
-
-
 
 

@@ -3,7 +3,7 @@ import numpy as np
 from fyers_api import fyersModel
 from fyers_api import accessToken
 import datetime
-import time
+import time,sys
 import entry as et 
 import futfyers as ft 
 import stockFY as sf
@@ -69,6 +69,13 @@ def remove_pending_orders(fyers):
 
 
 
+def exit_all_pos_and_close_session():
+	'''
+	At 3:15 close all open orders and exit the session
+	'''
+	if (datetime.datetime.now().hour==18 and datetime.datetime.now().minute>=46):
+		print(" Closing down th trading session for today")
+		sys.exit()
 
 
 ##########################################################
@@ -127,7 +134,7 @@ df= pd.DataFrame({'STOCKS':second30bolist})
 lens=len(df)
 max_entry_list=[]
 for i in range(0,lens):
-	max_entry_list.append(2)
+	max_entry_list.append(1)
 df['MAX_ENTRY']=max_entry_list
 df.to_csv('../Input/second30bolist.csv',index=False)
 
@@ -186,9 +193,9 @@ def refetch_ltp(symbol):
 	'''
 	refetch the ltp for a symbol
 	'''
-	data = {"symbols":quote_string}
-	quotes=fyers.quotes(data)
-	for item in quotes['d']:
+	data1 = {"symbols":"NSE:"+symbol+"-EQ"}
+	new_quote=fyers.quotes(data1)
+	for item in new_quote['d']:
 		ltp = item['v']['lp']
 	return ltp
 
@@ -404,17 +411,19 @@ while True:
 		if pltp is not None:
 			if abs(ltp-pltp)>(pltp*0.001):
 				time.sleep(5)
-				
+				#ltp=refetch_ltp(stock)
 				print("CAUTION: LTP is refeteched")
 
 		# Check for any entry/exit signal
 		try:
 			# FOR NORMAL STOCKS
+			
 			sf.check_entry_stocks(stock,ltp,pltp,fyers)
-
+			
 			#FOR NIFTY FUT
 			if 'NIFTYBANK' in stock:
 				nf.check_entry_bnf(stock,ltp,pltp,fyers)
+
 				
 
 		except Exception as e:
@@ -429,7 +438,12 @@ while True:
 
 
 
-	remove_pending_orders(fyers) #Removes the limit order which are pending more than 10 minutes
+	try:
+		remove_pending_orders(fyers) #Removes the limit order which are pending more than 10 minutes
+		exit_all_pos_and_close_session()
+
+	except Exception as e:
+		print(e)
 
 	
 
@@ -443,7 +457,15 @@ while True:
 	#####################################
 
 
-	time.sleep(5)
+	time.sleep(10)
+
+
+
+##############
+# TODO
+##############
+#1. Implement exit all position function at 3:15
+#2. make sure NIFTYFY is working properly
 
 		
 
