@@ -4,8 +4,8 @@ from fyers_api import fyersModel
 from fyers_api import accessToken
 import datetime
 import time,os
-import entry as et 
-import report as rt
+#import entry as et 
+#import report as rt
 #######################################
 # Initialization
 ######################################
@@ -61,9 +61,7 @@ prevdate=prevdate.strftime("%Y-%m-%d")
 
 
 def remove_pending_orders(fyers):
-      '''
-      Removes the LIMIT sell orders which are waiting state for more than 10 minutes
-      '''
+      
       orders=fyers.orderbook()
       orderbook = orders['orderBook']
 
