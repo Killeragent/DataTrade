@@ -383,7 +383,7 @@ def check_entry_bnf(symbol,ltp,pltp,fyers):
 					margin_req = round(((ltp*qty)/5)+1,1)#1 is used as a buffer 
 					write_log("INFO:\tAvailable margin to take trade: {}. Margin required to take trade: {}".format(avail_fund,margin_req))
 
-					if avail_fund>=margin_req:
+					if avail_fund>=30000:
 						write_log("---------------------------------------------")
 						write_log("INFO:\tPreparing to take s sell position (Red short)")
 						write_log("---------------------------------------------")

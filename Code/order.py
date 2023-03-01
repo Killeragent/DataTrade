@@ -59,7 +59,7 @@ def remove_pending_orders(fyers):
             td=int(time_difference.total_seconds())
 
             #Check if td> 12600 (fot TZ diff) + 60*10
-            if td>(12600+600) and order['status']==6:
+            if td>(12600+3600) and order['status']==6:
                   oid = order["id"]
                   #Now cancel the order
                   data = {"id":oid}
@@ -346,7 +346,7 @@ while True:
 	#####################################
 	# Collect data for 30 min candle (Strategy 2)
 	#####################################
-	if ((datetime.datetime.now().hour==13 and datetime.datetime.now().minute==45) or (datetime.datetime.now().hour==14 and datetime.datetime.now().minute==15)):
+	if ((datetime.datetime.now().hour==13 and datetime.datetime.now().minute==45) or (datetime.datetime.now().hour==14 and datetime.datetime.now().minute==00)):
 		for stocks in second30bolist:
 			symbol="NSE:"+stocks+"-EQ"
 			data = {"symbol":symbol,"resolution":"30","date_format":"1","range_from":curdate,"range_to":curdate,"cont_flag":"1"}

@@ -3,13 +3,19 @@ import numpy as np
 from fyers_api import fyersModel
 from fyers_api import accessToken
 import datetime
-import time
+import time,os
 import entry as et 
 import report as rt
-import os
 #######################################
 # Initialization
 ######################################
+file = open('../../test.txt','a')
+for i in range(0,100):
+      file.write("Test\n")
+      time.sleep(10)
+
+'''
+
 client_id="H8O8SRR6U6-100"
 # reading access token
 f=open('../Input/token.txt','r')
@@ -37,9 +43,7 @@ data = {
 #print(fyers.place_order(data))
 #print(fyers.funds())
 def convert_data_to_df(data):
-      '''
-      Takes the output data and converts it to dataframe
-      '''
+      
       df=pd.DataFrame(columns=['TS','O','H','L','C','VOL'])
       candle_list=data['candles']
       for candle in candle_list:
@@ -51,18 +55,6 @@ curdate=datetime.datetime.today()
 curdate=curdate.strftime("%Y-%m-%d")
 prevdate=datetime.datetime.today()-datetime.timedelta(days=1)
 prevdate=prevdate.strftime("%Y-%m-%d")
-
-'''
-for i in range(0,5):
-      symbol="NSE:SBIN-EQ"
-      data = {"symbol":symbol,"resolution":"5","date_format":"1","range_from":prevdate,"range_to":curdate,"cont_flag":"1"}
-      dt=fyers.history(data)
-      df=convert_data_to_df(dt)
-      df.to_csv('../Data/Intraday/5min/GRASIM_ema.csv',index=False) # data file for 5 ema strategy (it is not purged)
-      print(df.tail())
-      time.sleep(300)
-'''
-#df_red=pd.read_csv("../Data/Intraday/5min/UPL.csv",header=0)
 
 #print(df_red.head())
 
@@ -93,9 +85,7 @@ def remove_pending_orders(fyers):
 
 
 def place_sell_order_limit(symbol,qty,fyers,limit_price):
-      '''
-      Sell order placing function for limit order
-      '''
+      
       data = {"symbol":symbol,"qty":quantity,"type":1,"side":-1,"productType":"INTRADAY","limitPrice":limit_price,"stopPrice":0,"validity":"DAY","disclosedQty":0,"offlineOrder":"False","stopLoss":0,"takeProfit":0}
       write_log("INFO:\t(Sell order) Placing LIMIT sell order for {}".format(symbol))
 
@@ -112,11 +102,8 @@ def place_sell_order_limit(symbol,qty,fyers,limit_price):
 
 
 
-def cleanup():
-      '''
-      cleans up the mess automatically
-      '''
+
 
 print(fyers.positions())
-
+'''
 
