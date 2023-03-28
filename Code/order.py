@@ -626,7 +626,8 @@ while True:
 		if datetime.datetime.now().hour>=14:
 			time.sleep(10)
 
-		time.sleep(5)
+		else:
+			time.sleep(5)
 
 
 	else:

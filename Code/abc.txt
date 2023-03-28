@@ -1,0 +1,16 @@
+__pycache__
+abc.txt
+app.py
+bollinger.py
+cleanup.py
+data.csv
+entry.py
+futfyers.py
+login.py
+niftyFY.py
+order.py
+report.py
+stockFY.py
+strategy.py
+test.py
+zerodhaFut.py
