@@ -113,7 +113,7 @@ def exit_buy_order(symbol,quantity,fyers):
 
 
 
-def modify_manage_order(symbol,filepath,ltp,fyers):
+def modify_manage_order(symbol,filepath,ltp,fyers,position_json):
 	'''
 	For symbols read sl and tp from filepath
 	Performs required operations (compare details with current ltp)
@@ -122,6 +122,15 @@ def modify_manage_order(symbol,filepath,ltp,fyers):
 	write_log("INFO:\t(M&M) In Modify and Manage order function")
 	write_log("INFO:\t(M&M) Reading the input file for stock:{} filepath:{}".format(symbol,filepath))
 
+
+
+
+	#######################
+	# Decl BANKBEES
+	#######################
+	symbol='NSE:BANKBEES-EQ'
+
+	
 	df=pd.read_csv(filepath,header=0)
 	if len(df)>0:
 		entry_price=df['ENTRY_PRICE'].values[-1]
@@ -129,7 +138,8 @@ def modify_manage_order(symbol,filepath,ltp,fyers):
 		tp_price=df['TP'].values[-1]
 		strategy = df['STRATEGY'].values[-1]
 		
-		pos=fyers.positions()
+		#pos=fyers.positions()
+		pos=position_json
 		netPos=pos['netPositions']
 		#Now iterate through all positions
 
@@ -305,6 +315,9 @@ def check_red_entry(symbol,df,ltp,pltp):
 		low=0
 		for i in range(0,len(df)):
 			if closes[i]<opens[i]:
+				print(highs[i])
+				print(lows[i])
+				print(ltp*0.007)
 				if abs(highs[i]-lows[i])<(ltp*0.007):
 					high=highs[i]
 					low=lows[i]
@@ -419,7 +432,7 @@ def check_entry_bnf(symbol,ltp,pltp,fyers):
 		#Now checking modify order details
 		write_log("INFO:\tChecking exit conditions and sl update conditions...")
 		print("INFO:\t Checking exit conditions and sl update conditions...")
-		modify_manage_order(symbol,ORDER_DETAILS_FILE_PATH,ltp,fyers)
+		modify_manage_order(symbol,ORDER_DETAILS_FILE_PATH,ltp,fyers,position_json)
 		write_log("INFO:\tChecking done successfully")
 		print("INFO:\tChecking done successfully...")
 		print("----------------------------End of Iteration--------------------------------")

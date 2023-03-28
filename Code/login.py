@@ -4,6 +4,7 @@ import time
 import webbrowser
 
 
+from kiteconnect import KiteConnect
 def login():
 	'''
 	Logs in the user and finally writes the access token in the file
@@ -24,6 +25,26 @@ def login():
 	file.write(str(access_token))
 	file.close()
 	print("\n accessToken written to the file ...")
+	
+
+
+
+	
+	#############################
+	# Zerodha client login
+	############################
+	api_key='cvnpw76nrxxgskao'
+	api_secret='vqvr1bv3ya07zctndtgq7v71c8vxu33t'
+	kite = KiteConnect(api_key=api_key)
+	print(kite.login_url())
+	req_token=input(" Enter the request token")
+	data = kite.generate_session(req_token, api_secret=api_secret)
+	access_token_zerodha = data['access_token']
+	file=open('../Input/token_zerodha.txt','w')
+	file.write(str(access_token_zerodha))
+	file.close()
+	print("\n accessToken written to the file for zerodha  ...")
+
 
 
 login()

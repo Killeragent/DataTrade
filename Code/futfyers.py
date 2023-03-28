@@ -12,7 +12,9 @@ from os.path import exists
 ####################################
 
 
-
+'''
+FILE FOR TAKING BNF FUT POSITIONS IN FYERS
+'''
 
 ###################################
 # Log File Create
