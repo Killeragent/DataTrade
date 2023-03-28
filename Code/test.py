@@ -5,6 +5,7 @@ from fyers_api import accessToken
 import datetime
 import time,os
 from fyers_api.Websocket import ws
+
 #import entry as et 
 #import report as rt
 #######################################
@@ -32,3 +33,10 @@ try:
       print(quotes)
 except Exception as e:
       print(e)
+
+
+
+'''
+ssh -i att-AlgoTrading.pem ec2-user@1ip
+
+'''

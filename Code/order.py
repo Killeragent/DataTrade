@@ -623,11 +623,9 @@ while True:
 
 		if datetime.datetime.now().hour==12 and datetime.datetime.now().minute<49:
 			time.sleep(60)
-		if datetime.datetime.now().hour>=14:
+		
+		if (datetime.datetime.now().hour==12 and datetime.datetime.now().minute>49) or datetime.datetime.now().hour==13:
 			time.sleep(10)
-
-		else:
-			time.sleep(5)
 
 
 	else:

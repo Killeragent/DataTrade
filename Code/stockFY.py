@@ -571,7 +571,7 @@ def check_red_entry(symbol,df,ltp,pltp):
 	sl = 0
 	tp = 0
 	entry_type="NA"
-	max_risk = 300
+	max_risk = 700
 	high=0
 	low=0
 	if ((datetime.datetime.now().hour==12) or (datetime.datetime.now().hour==13 and datetime.datetime.now().minute<=35)):
@@ -661,7 +661,7 @@ def second_30_breakout(symbol,df,ltp,pltp):
 	sl = 0
 	tp = 0
 	entry_type="NA"
-	max_risk = 600
+	max_risk = 500
 	high=0
 	low=0
 	if ((datetime.datetime.now().hour==13 and datetime.datetime.now().minute>=45)) or ((datetime.datetime.now().hour>=14)):
@@ -788,7 +788,7 @@ def check_reliance_strategy_5min(symbol,df,ltp,pltp):
 	sl = 0
 	tp = 0
 	entry_type="NA"
-	max_risk = 400
+	max_risk = 700
 	high=0
 	low=0
 	
