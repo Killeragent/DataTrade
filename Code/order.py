@@ -592,8 +592,8 @@ while True:
 						#Update the dictionary
 						prev_ltp[stock]=ltp
 
-				else:
-					pass
+					else:
+						pass
 
 				
 		
