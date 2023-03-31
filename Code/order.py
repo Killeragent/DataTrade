@@ -519,7 +519,7 @@ while True:
 							
 
 					except Exception as e:
-						print(e)
+						print("Error portion here {}".format(e))
 						log_write(" Error in check entry...")
 
 

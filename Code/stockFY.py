@@ -583,7 +583,7 @@ def check_red_entry(symbol,df,ltp,pltp):
 			high=0 
 			low=0
 			for i in range(0,len(df)):
-				if closes[i]<opens[i] and highs[i]>high:
+				if closes[i]<opens[i] and highs[i]>high and lows[i]>low:
 					high=highs[i]
 					low=lows[i]
 					
@@ -788,7 +788,7 @@ def check_reliance_strategy_5min(symbol,df,ltp,pltp):
 	sl = 0
 	tp = 0
 	entry_type="NA"
-	max_risk = 700
+	max_risk = 500
 	high=0
 	low=0
 	
